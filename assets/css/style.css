@@ -1,0 +1,331 @@
+/*Import fonte para o curriculum
+*--------------------------------------------------------------------------------------
+*os imports sao do google fonts
+*-------------------------------------------------------------------------------------
+
+@import url('https://fonts.googleapis.com/css?family=Raleway|segoe ui');
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+/*formatacao geral
+*--------------------------------------------------------------------------------------
+*a formatacao aqui afetara todos os elementos 
+*-------------------------------------------------------------------------------------
+*/
+html, body {margin:0px; padding:0px; width:100%; height:100%;}
+ul {float:left; margin:0px; padding:0px; list-style:none;}
+ul li {float:left;}
+a {text-decoration:none; cursor:pointer;}
+p, h1, h2, h3, h4, h5, h6 {margin:0px; padding:0px;}
+button:focus, select:focus, textarea:focus {outline:none;}
+button {cursor:pointer;}
+input {outline:none;}
+* {font-family:"Roboto";}
+
+
+/*formatacao do scrollbar
+*--------------------------------------------------------------------------------------
+*a formatacao aqui mudara todos os scrollbar
+*-------------------------------------------------------------------------------------
+*/
+::-webkit-scrollbar {width:5px;}
+::-webkit-scrollbar-track-piece {background-color:#efefef;}
+::-webkit-scrollbar-thumb {background-color:#222629;}
+
+
+aside.data-mg {position:fixed; left:0px; width:20%; height:100%; z-index:2; background:linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../img/background-aside.jpg") no-repeat; background-size:cover; background-position:center center;}
+aside.data-mg .content-data-mg div.redes-sociais {float:left; width:100%; height:200px; display:flex; align-items:flex-end; justify-content:flex-start; background:url("../img/photo-mg.jpg") no-repeat; background-size:cover; background-position:center center;}
+aside.data-mg .content-data-mg div.redes-sociais a {float:left; margin:0px; background-color:#fdfdfe; width:25px; height:25px; display:flex; justify-content:center; align-items:center; align-content:center; transition:0.3s;}
+aside.data-mg .content-data-mg div.redes-sociais a:last-child {border-radius:0 5px 0 0;}
+aside.data-mg .content-data-mg div.redes-sociais a i { color:#17202a !important;}
+aside.data-mg .content-data-mg div.redes-sociais a:hover {background-color:#03a6b0; transition:0.3s;}
+aside.data-mg .content-data-mg {width:80%; margin-left:10%; margin-top:20px;}
+aside.data-mg .content-data-mg h1 {margin-bottom:0px; width:100%; color:#02be6e;}
+aside.data-mg .content-data-mg label {float:left; margin-bottom:10px; width:100%; color:#fdfdfe;}
+aside.data-mg .content-data-mg h2 {float:left; color:#02be6e; margin:10px 0px; width:100%; font-size:18px;}
+aside.data-mg .content-data-mg ul {width:100%;}
+aside.data-mg .content-data-mg ul li {width:100%; margin:4px 0px; font-size:13px; color:#fdfdfe;}
+
+
+
+button.toggle-data-cvmg {transform:rotate(90deg); position:fixed; width:150px; z-index:5; left:-64px; padding:2px; bottom:100px; background-color:#02be6e; border:none; border-radius:0px 7px 0px 7px; color:#fdfdfe; display:none;}
+
+
+.effect-show-data-mg {transform:translateX(0px) !important; transition:0.5s !important;}
+.effect-hide-data-mg {transform:translateX(-130%) !important; transition:0.5s !important;}
+
+
+@media (min-width:0px) and (max-width:440px) {
+	aside.data-mg {transform:translateX(-130%); position:absolute; height:100em; width:100%; padding-bottom:20px; top:50px !important;}
+	button.toggle-data-cvmg {display:block;}
+}
+@media (min-width:441px) and (max-width:630px) {
+	aside.data-mg {transform:translateX(-130%); position:absolute; height:100em; width:50%; padding-bottom:20px; top:50px !important;}
+	button.toggle-data-cvmg {display:block;}
+}
+@media (min-width:631px) and (max-width:875px) {
+	aside.data-mg {transform:translateX(-130%); position:absolute; height:100em; width:40%; padding-bottom:20px; top:50px !important;}
+	button.toggle-data-cvmg {display:block;}
+}
+@media (min-width:876px) and (max-width:1100px) {
+	aside.data-mg {transform:translateX(-130%); width:25%; top:50px;}
+	button.toggle-data-cvmg {display:block;}
+}
+
+
+
+
+
+
+nav {position:fixed !important; top:0px; z-index:9; right:0px; width:80%; background-color:#02be6e; display:flex;}
+nav ul {display:flex; padding:0px 20px;}
+nav ul li {padding:20px; cursor:pointer; color:#fdfdfe; background-size:0px;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+nav ul li:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #029c5a;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+nav ul li:hover:before, nav ul li:focus:before, nav ul li:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/*nav ul li:hover {background-color:#029c5a; color:#fdfdfe; transition:0.3s; background-size:100%;}*/
+button.toggle-nav {position:fixed; z-index:10; right:9%; top:10px; border:none; border:none; color:#fdfdfe; font-size:20px; background-color:transparent; display:none; }
+button.toggle-nav i {transform:translateY(-1px);}
+
+@media (min-width:0px) and (max-width:640px) {
+	nav {width:100%; min-height:50px;}
+	nav ul {width:80%; margin-left:10%; flex-direction:column; display:none; padding:0px;}
+	nav ul li {width:95%; padding:10px 15px;}
+	button.toggle-nav {display:block;}
+}
+
+@media (min-width:641px) and (max-width:855px) {
+	nav {width:100%;}
+	nav ul {width:100%; padding:0px 20px;}
+	nav ul li {padding:20px 10px;}
+}
+
+@media (min-width:856px) and (max-width:1100px) {
+	nav {width:100%;}
+}
+
+
+
+
+
+main {position:absolute; width:54%; top:100px; left:23%; animation-name:move; animation-duration:1s; background-color:; animation-iteration-count:1;}
+main section {float:left; width:100%; margin-bottom:20px; display:flex; flex-wrap:wrap;}
+main section h2 {float:left; width:100%; color:#17202a; font-size:20px; margin-bottom:20px; padding:5px 0px;
+	border: 1px solid transparent;
+	border-top:none;
+	border-left:none;
+	border-right:none;
+	-moz-border-image: -moz-linear-gradient(right, #e8e8e8 0%, #ffffff 100%);
+	-webkit-border-image: -webkit-linear-gradient(right, #e8e8e8 0%, #ffffff 100%);
+	border-image: linear-gradient(to right, #e8e8e8 0%, #ffffff 100%);
+	border-image-slice: 1;
+}
+
+main section h3 {float:left; width:100%; font-size:16px; color:#17202a; margin-bottom:10px;}
+@keyframes move {
+	0% {opacity:0; margin-top:180px;}
+	100% {opacity:1; margin-top:0px;}
+}
+
+main section.abstract article {float:left; width:100%;}
+main section.abstract article p {float:left; width:100%; color:#999999; font-size:14px; margin-bottom:10px; margin-top:-8px; text-align:justify; background-color:;}
+
+
+main section.portfolio div.projects {float:left; width:100%; display:flex; flex-wrap:wrap; align-content:flex-start;}
+main section.portfolio div.projects div.container {float:left; width:42%; margin-right:30px; margin-bottom:15px; border:1px solid rgba(0,0,0,0.1); border-radius:0px; padding:25px 0px; display:flex; flex-wrap:wrap; justify-content:center; align-content:flex-start;}
+main section.portfolio div.projects div.container div.box-img {float:left; width:80%; height:160px; margin-bottom:15px; background-repeat:no-repeat; background-size:cover; background-position:center; border:1px solid #e8e8e8;}
+main section.portfolio div.projects div.container:nth-child(1) div.box-img {background-image:url('../img/portfolio-1.png');}
+main section.portfolio div.projects div.container:nth-child(2) div.box-img {background-image:url('../img/img-default.png');}
+main section.portfolio div.projects div.container:nth-child(3) div.box-img {background-image:url('../img/img-default.png');}
+main section.portfolio div.projects div.container div.box-info {width:80%;}
+main section.portfolio div.projects div.container div.box-info h5 {float:left; width:100%; margin-bottom:8px; color:#666666;}
+main section.portfolio div.projects div.container div.box-info p.about-project {float:left; width:100%; color:#999999; text-align:justify; font-size:13px; margin-bottom:8px;}
+main section.portfolio div.projects div.container div.box-info p.tools-project {float:left; width:100%; color:#666666; text-align:justify; font-size:13px; margin-bottom:8px;}
+main section.portfolio div.projects div.container div.box-info a {float:left; margin-right:5px; margin-top:5px; color:#fdfdfe; background-color:#666666; border-radius:15px; font-size:12px; padding:1px 10px 2px 10px;}
+@media (min-width:0px) and (max-width:840px) {
+	main section.portfolio div.projects div.container {width:100%; margin-right:0px; display:flex;}
+	main section.portfolio div.projects div.container div.box-img {width:90%;}
+	main section.portfolio div.projects div.container div.box-info {width:90%;}
+}
+
+main section.experience ul label.not-item {float:left; font-size:13px; margin-bottom:20px; color:#ebb134; font-style:italic;}
+
+main section.formation ul {float:left; width:100%; display:flex; flex-wrap:wrap;}
+main section.formation ul li {float:left; width:100%; margin-bottom:5px; display:flex; background-color:#e2e1dc; padding:10px; border-radius:5px;}
+main section.formation ul li > label {width:100px; color:#666666; font-size:14px; font-weight:bold;}
+main section.formation ul li div {margin-left:10px; width:65%;}
+main section.formation ul li div label {float:left; width:100%; color:#666666; font-size:14px; font-weight:bold;}
+main section.formation ul li div label:last-child {font-size:12px; font-style:italic; font-weight:normal;}
+
+main section.premiations ul {float:left; width:100%; display:flex; flex-wrap:wrap;}
+main section.premiations ul li {float:left; width:100%; margin-bottom:10px; display:flex; background-color:#e2e1dc; padding:10px; border-radius:5px;}
+main section.premiations ul li > label {width:100px; color:#666666; font-size:14px; font-weight:bold;}
+main section.premiations ul li div {margin-left:10px; width:65%;}
+main section.premiations ul li div label {float:left; width:100%; color:#666666; font-size:14px; font-weight:bold;}
+main section.premiations ul li div label:last-child {font-size:12px; font-style:italic; font-weight:normal;}
+
+main section.activities ul {float:left; width:100%; display:flex; flex-wrap:wrap;}
+main section.activities ul li {float:left; width:100%; margin-bottom:10px; display:flex; background-color:#e2e1dc; padding:10px; border-radius:5px;}
+main section.activities ul li > label {width:100px; color:#666666; font-size:14px; font-weight:bold;}
+main section.activities ul li div {margin-left:10px; width:65%;}
+main section.activities ul li div label {float:left; width:100%; color:#666666; font-size:14px; font-weight:bold;}
+main section.activities ul li div label:last-child {font-size:12px; font-style:italic; font-weight:normal;}
+
+@media (min-width:0px) and (max-width:750px) {
+	main {width:80% !important; left:10% !important; top:70px;}
+}
+
+@media (min-width:750px) and (max-width:1100px) {
+	main {width:68%; left:40px;}
+}
+
+@media (min-width:0px) and (max-width:560px) {
+	main {width:80%;}
+	main content {width:100%;}
+	main content ul li > label {font-size:12px;}
+	main content ul li div label:first-child {font-size:12px;}
+	main content ul li div label:last-child {font-size:10px;}
+}
+
+@media (min-width:561px) and (max-width:650px) {
+	main content {width:73%;}
+	main content ul li > label {width:120px; font-size:12px;}
+	main content ul li div label:first-child {font-size:12px;}
+	main content ul li div label:last-child {font-size:10px;}
+}
+
+@media (min-width:651px) and (max-width:750px) {
+	main content {width:85%;}
+}
+
+
+
+
+aside.skills {position:absolute; width:18%; top:100px; right:30px; background-color:;}
+aside.skills h2 {float:left; width:100%; color:#17202a; font-size:20px; margin-bottom:20px; padding:5px 0px;
+	border: 1px solid transparent;
+	border-top:none;
+	border-left:none;
+	border-right:none;
+	-moz-border-image: -moz-linear-gradient(right, #e8e8e8 0%, #ffffff 100%);
+	-webkit-border-image: -webkit-linear-gradient(right, #e8e8e8 0%, #ffffff 100%);
+	border-image: linear-gradient(to right, #e8e8e8 0%, #ffffff 100%);
+	border-image-slice: 1;
+}
+aside.skills h3 {float:left; width:100%; font-size:16px; color:#17202a; margin:10px 0px;}
+aside.skills ul {float:left; width:100%;}
+aside.skills ul li {float:left; display:block !important; width:100%; margin-bottom:8px;}
+aside.skills ul li span {float:left; width:100%; font-size:16px; color:#999999; margin-bottom:0px;}
+aside.skills ul li div.bar-progress-skill-1 {float:left; width:100% !important; height:5px; margin-left:0px; margin-top:7px; background-color:#e8e8e8; border-radius:5px;}
+aside.skills ul li div.bar-progress-skill-1:before {float:left; content:" "; visibility:visible; width:10%; height:5px; border-radius:5px; animation-name:barProgress1; animation-duration:1.5s; animation-iteration-count:1; background-image: linear-gradient(19deg, #666666 0%, #666666 100%);}
+aside.skills ul li div.bar-progress-skill-2 {float:left; width:100% !important; height:5px; margin-left:0px; margin-top:7px; background-color:#e8e8e8; border-radius:5px;}
+aside.skills ul li div.bar-progress-skill-2:before {float:left; content:" "; visibility:visible; width:20%; height:5px; border-radius:5px; animation-name:barProgress2; animation-duration:1.5s; animation-iteration-count:1; background-image: linear-gradient(19deg, #666666 0%, #666666 100%);}
+aside.skills ul li div.bar-progress-skill-3 {float:left; width:100% !important; height:5px; margin-left:0px; margin-top:7px; background-color:#e8e8e8; border-radius:5px;}
+aside.skills ul li div.bar-progress-skill-3:before {float:left; content:" "; visibility:visible; width:30%; height:5px; border-radius:5px; animation-name:barProgress3; animation-duration:1.5s; animation-iteration-count:1; background-image: linear-gradient(19deg, #666666 0%, #666666 100%);}
+aside.skills ul li div.bar-progress-skill-4 {float:left; width:100% !important; height:5px; margin-left:0px; margin-top:7px; background-color:#e8e8e8; border-radius:5px;}
+aside.skills ul li div.bar-progress-skill-4:before {float:left; content:" "; visibility:visible; width:40%; height:5px; border-radius:5px; animation-name:barProgress4; animation-duration:1.5s; animation-iteration-count:1; background-image: linear-gradient(19deg, #666666 0%, #666666 100%);}
+aside.skills ul li div.bar-progress-skill-5 {float:left; width:100% !important; height:5px; margin-left:0px; margin-top:7px; background-color:#e8e8e8; border-radius:5px;}
+aside.skills ul li div.bar-progress-skill-5:before {float:left; content:" "; visibility:visible; width:50%; height:5px; border-radius:5px; animation-name:barProgress5; animation-duration:1.5s; animation-iteration-count:1; background-image: linear-gradient(19deg, #666666 0%, #666666 100%);}
+aside.skills ul li div.bar-progress-skill-6 {float:left; width:100% !important; height:5px; margin-left:0px; margin-top:7px; background-color:#e8e8e8; border-radius:5px;}
+aside.skills ul li div.bar-progress-skill-6:before {float:left; content:" "; visibility:visible; width:60%; height:5px; border-radius:5px; animation-name:barProgress6; animation-duration:1.5s; animation-iteration-count:1; background-image: linear-gradient(19deg, #666666 0%, #666666 100%);}
+aside.skills ul li div.bar-progress-skill-7 {float:left; width:100% !important; height:5px; margin-left:0px; margin-top:7px; background-color:#e8e8e8; border-radius:5px;}
+aside.skills ul li div.bar-progress-skill-7:before {float:left; content:" "; visibility:visible; width:70%; height:5px; border-radius:5px; animation-name:barProgress7; animation-duration:1.5s; animation-iteration-count:1; background-image: linear-gradient(19deg, #666666 0%, #666666 100%);}
+aside.skills ul li div.bar-progress-skill-8 {float:left; width:100% !important; height:5px; margin-left:0px; margin-top:7px; background-color:#e8e8e8; border-radius:5px;}
+aside.skills ul li div.bar-progress-skill-8:before {float:left; content:" "; visibility:visible; width:80%; height:5px; border-radius:5px; animation-name:barProgress8; animation-duration:1.5s; animation-iteration-count:1; background-image: linear-gradient(19deg, #666666 0%, #666666 100%);}
+aside.skills ul li div.bar-progress-skill-9 {float:left; width:100% !important; height:5px; margin-left:0px; margin-top:7px; background-color:#e8e8e8; border-radius:5px;}
+aside.skills ul li div.bar-progress-skill-9:before {float:left; content:" "; visibility:visible; width:90%; height:5px; border-radius:5px; animation-name:barProgress9; animation-duration:1.5s; animation-iteration-count:1; background-image: linear-gradient(19deg, #666666 0%, #666666 100%);}
+aside.skills ul li div.bar-progress-skill-10 {float:left; width:100% !important; height:5px; margin-left:0px; margin-top:7px; background-color:#e2e1dc; border-radius:5px;}
+aside.skills ul li div.bar-progress-skill-10:before {float:left; content:" "; visibility:visible; width:100%; height:5px; border-radius:5px; animation-name:barProgress10; animation-duration:1.5s; animation-iteration-count:1; background-image: linear-gradient(19deg, #666666 0%, #666666 100%);}
+@keyframes barProgress1 {
+	0% {width:0%;}
+	100% {width:10%;}
+}
+@keyframes barProgress2 {
+	0% {width:0%;}
+	100% {width:20%;}
+}
+@keyframes barProgress3 {
+	0% {width:0%;}
+	100% {width:30%;}
+}
+@keyframes barProgress4 {
+	0% {width:0%;}
+	100% {width:40%;}
+}
+@keyframes barProgress5 {
+	0% {width:0%;}
+	100% {width:50%;}
+}
+@keyframes barProgress6 {
+	0% {width:0%;}
+	100% {width:60%;}
+}
+@keyframes barProgress7 {
+	0% {width:0%;}
+	100% {width:70%;}
+}
+@keyframes barProgress8 {
+	0% {width:0%;}
+	100% {width:80%;}
+}
+@keyframes barProgress9 {
+	0% {width:0%;}
+	100% {width:90%;}
+}
+@keyframes barProgress10 {
+	0% {width:0%;}
+	100% {width:100%;}
+}
+
+
+button.toggle-skills-cvmg  {transform:rotate(90deg); position:fixed; width:150px; z-index:5; left:-64px; padding:2px; bottom:280px; background-color:#02be6e; border:none; border-radius:0px 7px 0px 7px; color:#fdfdfe; display:none;}
+
+.effect-show-skills {transform:translateX(0px) !important; transition:0.5s !important;}
+.effect-hide-skills {transform:translateX(-130%) !important; transition:0.5s !important;}
+
+
+@media (min-width:0px) and (max-width:750px) {
+	aside.skills {width:100vw; background-color:#fdfdfe; padding:20px 0px; top:50px; left:0px; transform:translateX(-130%);}
+	aside.skills h2 {width:80%; margin-left:10%;}
+	aside.skills h3 {width:80%; margin-left:10%;}
+	aside.skills ul {width:80%; margin-left:10%;}
+	button.toggle-skills-cvmg {display:block;}
+}
+
+@media (min-width:750px) and (max-width:1100px) {
+	aside.skills {width:20%; right:40px;}
+}
+
+
