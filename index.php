@@ -138,7 +138,7 @@
 					<li>
 						<label>01/2020 - 07/2022</label>
 						<div>
-							<label>Graduação em Anasile e Desenvolvimento de Distemas) - 3º periodo</label><br>
+							<label>Graduação em Anásile e Desenvolvimento de Sistemas) - 3º periodo</label><br>
 							<label>Estácio - Natal/RN</label>
 						</div>
 					</li>

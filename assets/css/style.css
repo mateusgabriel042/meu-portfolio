@@ -35,29 +35,27 @@ input {outline:none;}
 
 
 aside.data-mg {position:fixed; left:0px; width:20%; height:100%; z-index:2; background:linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../img/background-aside.jpg") no-repeat; background-size:cover; background-position:center center;}
+aside.data-mg .content-data-mg {float:left; width:80%; margin-left:10%; margin-top:20px;}
 aside.data-mg .content-data-mg div.redes-sociais {float:left; width:100%; height:200px; display:flex; align-items:flex-end; justify-content:flex-start; background:url("../img/photo-mg.jpg") no-repeat; background-size:cover; background-position:center center;}
 aside.data-mg .content-data-mg div.redes-sociais a {float:left; margin:0px; background-color:#fdfdfe; width:25px; height:25px; display:flex; justify-content:center; align-items:center; align-content:center; transition:0.3s;}
 aside.data-mg .content-data-mg div.redes-sociais a:last-child {border-radius:0 5px 0 0;}
 aside.data-mg .content-data-mg div.redes-sociais a i { color:#17202a !important;}
 aside.data-mg .content-data-mg div.redes-sociais a:hover {background-color:#03a6b0; transition:0.3s;}
-aside.data-mg .content-data-mg {width:80%; margin-left:10%; margin-top:20px;}
 aside.data-mg .content-data-mg h1 {margin-bottom:0px; width:100%; color:#02be6e;}
 aside.data-mg .content-data-mg label {float:left; margin-bottom:10px; width:100%; color:#fdfdfe;}
 aside.data-mg .content-data-mg h2 {float:left; color:#02be6e; margin:10px 0px; width:100%; font-size:18px;}
 aside.data-mg .content-data-mg ul {width:100%;}
 aside.data-mg .content-data-mg ul li {width:100%; margin:4px 0px; font-size:13px; color:#fdfdfe;}
 
-
-
-button.toggle-data-cvmg {transform:rotate(90deg); position:fixed; width:150px; z-index:5; left:-64px; padding:2px; bottom:100px; background-color:#02be6e; border:none; border-radius:0px 7px 0px 7px; color:#fdfdfe; display:none;}
-
+button.toggle-data-cvmg {transform:rotate(90deg); position:fixed; width:150px; z-index:10; left:-64px; padding:2px; bottom:100px; background-color:#02be6e; border:none; border-radius:0px 7px 0px 7px; color:#fdfdfe; display:none;}
 
 .effect-show-data-mg {transform:translateX(0px) !important; transition:0.5s !important;}
 .effect-hide-data-mg {transform:translateX(-130%) !important; transition:0.5s !important;}
 
-
 @media (min-width:0px) and (max-width:440px) {
-	aside.data-mg {transform:translateX(-130%); position:absolute; height:100em; width:100%; padding-bottom:20px; top:50px !important;}
+	aside.data-mg {position:fixed; transform:translateX(-130%); width:100%; height:100%; z-index:6; overflow-y:auto; padding-bottom:20px; top:0px !important;}
+	aside.data-mg .content-data-mg {padding-bottom:20px;}
+	aside.data-mg .content-data-mg div.redes-sociais {background-position:top center; height:300px;}
 	button.toggle-data-cvmg {display:block;}
 }
 @media (min-width:441px) and (max-width:630px) {
@@ -78,7 +76,7 @@ button.toggle-data-cvmg {transform:rotate(90deg); position:fixed; width:150px; z
 
 
 
-nav {position:fixed !important; top:0px; z-index:9; right:0px; width:80%; background-color:#02be6e; display:flex;}
+nav {position:fixed !important; top:0px; z-index:5; right:0px; width:80%; background-color:#02be6e; display:flex;}
 nav ul {display:flex; padding:0px 20px;}
 nav ul li {padding:20px; cursor:pointer; color:#fdfdfe; background-size:0px;
   vertical-align: middle;
@@ -116,7 +114,7 @@ nav ul li:hover:before, nav ul li:focus:before, nav ul li:active:before {
 }
 
 /*nav ul li:hover {background-color:#029c5a; color:#fdfdfe; transition:0.3s; background-size:100%;}*/
-button.toggle-nav {position:fixed; z-index:10; right:9%; top:10px; border:none; border:none; color:#fdfdfe; font-size:20px; background-color:transparent; display:none; }
+button.toggle-nav {position:fixed; z-index:5; right:9%; top:10px; border:none; border:none; color:#fdfdfe; font-size:20px; background-color:transparent; display:none; }
 button.toggle-nav i {transform:translateY(-1px);}
 
 @media (min-width:0px) and (max-width:640px) {
@@ -183,51 +181,43 @@ main section.portfolio div.projects div.container div.box-info a {float:left; ma
 main section.experience ul label.not-item {float:left; font-size:13px; margin-bottom:20px; color:#ebb134; font-style:italic;}
 
 main section.formation ul {float:left; width:100%; display:flex; flex-wrap:wrap;}
-main section.formation ul li {float:left; width:100%; margin-bottom:5px; display:flex; background-color:#e2e1dc; padding:10px; border-radius:5px;}
-main section.formation ul li > label {width:100px; color:#666666; font-size:14px; font-weight:bold;}
-main section.formation ul li div {margin-left:10px; width:65%;}
-main section.formation ul li div label {float:left; width:100%; color:#666666; font-size:14px; font-weight:bold;}
+main section.formation ul li {float:left; width:100%; margin-bottom:5px; display:flex; background-color:rgba(0,0,0,0.04); padding:10px; border-radius:5px;}
+main section.formation ul li > label {width:150px; color:#17202a; font-size:13px;}
+main section.formation ul li div {margin-left:10px; width:85%;}
+main section.formation ul li div label {float:left; width:100%; color:#17202a; font-size:14px; font-weight:bold;}
 main section.formation ul li div label:last-child {font-size:12px; font-style:italic; font-weight:normal;}
 
 main section.premiations ul {float:left; width:100%; display:flex; flex-wrap:wrap;}
-main section.premiations ul li {float:left; width:100%; margin-bottom:10px; display:flex; background-color:#e2e1dc; padding:10px; border-radius:5px;}
-main section.premiations ul li > label {width:100px; color:#666666; font-size:14px; font-weight:bold;}
-main section.premiations ul li div {margin-left:10px; width:65%;}
-main section.premiations ul li div label {float:left; width:100%; color:#666666; font-size:14px; font-weight:bold;}
+main section.premiations ul li {float:left; width:100%; margin-bottom:10px; display:flex; background-color:rgba(0,0,0,0.04); padding:10px; border-radius:5px;}
+main section.premiations ul li > label {width:150px; color:#17202a; font-size:14px;}
+main section.premiations ul li div {margin-left:10px; width:85%;}
+main section.premiations ul li div label {float:left; width:100%; color:#17202a; font-size:14px; font-weight:bold;}
 main section.premiations ul li div label:last-child {font-size:12px; font-style:italic; font-weight:normal;}
 
 main section.activities ul {float:left; width:100%; display:flex; flex-wrap:wrap;}
-main section.activities ul li {float:left; width:100%; margin-bottom:10px; display:flex; background-color:#e2e1dc; padding:10px; border-radius:5px;}
-main section.activities ul li > label {width:100px; color:#666666; font-size:14px; font-weight:bold;}
-main section.activities ul li div {margin-left:10px; width:65%;}
-main section.activities ul li div label {float:left; width:100%; color:#666666; font-size:14px; font-weight:bold;}
+main section.activities ul li {float:left; width:100%; margin-bottom:10px; display:flex; background-color:rgba(0,0,0,0.04); padding:10px; border-radius:5px;}
+main section.activities ul li > label {width:150px; color:#17202a; font-size:14px;}
+main section.activities ul li div {margin-left:10px; width:85%;}
+main section.activities ul li div label {float:left; width:100%; color:#17202a; font-size:14px; font-weight:bold;}
 main section.activities ul li div label:last-child {font-size:12px; font-style:italic; font-weight:normal;}
 
-@media (min-width:0px) and (max-width:750px) {
-	main {width:80% !important; left:10% !important; top:70px;}
-}
-
-@media (min-width:750px) and (max-width:1100px) {
-	main {width:68%; left:40px;}
-}
-
 @media (min-width:0px) and (max-width:560px) {
-	main {width:80%;}
-	main content {width:100%;}
-	main content ul li > label {font-size:12px;}
-	main content ul li div label:first-child {font-size:12px;}
-	main content ul li div label:last-child {font-size:10px;}
+	main {width:80%; left:10%; top:70px;}
+	main ul li {flex-wrap:wrap;}
+	main ul li > label {float:left; width:100% !important; font-size:12px; font-weight:bold; margin-bottom:7px;}
+	main ul li div {width:100%; margin-left:0px !important;}
+	main ul li div label:first-child {font-size:12px; margin-bottom:7px;}
+	main ul li div label:last-child {font-size:10px;}
 }
 
-@media (min-width:561px) and (max-width:650px) {
-	main content {width:73%;}
-	main content ul li > label {width:120px; font-size:12px;}
-	main content ul li div label:first-child {font-size:12px;}
-	main content ul li div label:last-child {font-size:10px;}
+@media (min-width:561px) and (max-width:750px) {
+	main {width:80%; left:10%; top:70px;}
+	main ul li > label {width:100px; font-size:12px;}
+	main ul li div label:first-child {font-size:12px;}
+	main ul li div label:last-child {font-size:10px;}
 }
-
-@media (min-width:651px) and (max-width:750px) {
-	main content {width:85%;}
+@media (min-width:750px) and (max-width:1100px) {
+	main {width:68%; left:40px; top:70px;}
 }
 
 
@@ -310,17 +300,18 @@ aside.skills ul li div.bar-progress-skill-10:before {float:left; content:" "; vi
 }
 
 
-button.toggle-skills-cvmg  {transform:rotate(90deg); position:fixed; width:150px; z-index:5; left:-64px; padding:2px; bottom:280px; background-color:#02be6e; border:none; border-radius:0px 7px 0px 7px; color:#fdfdfe; display:none;}
+button.toggle-skills-cvmg {transform:rotate(90deg); position:fixed; width:150px; z-index:10; left:-64px; padding:2px; bottom:280px; background-color:#02be6e; border:none; border-radius:0px 7px 0px 7px; color:#fdfdfe; display:none;}
 
 .effect-show-skills {transform:translateX(0px) !important; transition:0.5s !important;}
 .effect-hide-skills {transform:translateX(-130%) !important; transition:0.5s !important;}
 
 
 @media (min-width:0px) and (max-width:750px) {
-	aside.skills {width:100vw; background-color:#fdfdfe; padding:20px 0px; top:50px; left:0px; transform:translateX(-130%);}
+	aside.skills {position:fixed; overflow-y:auto; width:100vw; height:100%; background-color:#fdfdfe; padding:20px 0px; top:0px; z-index:6; left:0px; transform:translateX(-130%);}
 	aside.skills h2 {width:80%; margin-left:10%;}
 	aside.skills h3 {width:80%; margin-left:10%;}
 	aside.skills ul {width:80%; margin-left:10%;}
+	aside.skills ul:last-child {padding-bottom:40px;}
 	button.toggle-skills-cvmg {display:block;}
 }
 
