@@ -14,10 +14,10 @@
 				<h1>Mateus Gabriel</h1>
 				<label>Dev. Full Stack PHP</label>
 				<div class="redes-sociais">
-					<a href="https://www.facebook.com/profile.php?id=100008191591182"><i class="fa">&#xf09a;</i></a><!-- Facebook -->
-					<a href="#"><i class="fa">&#xf16d;</i></a><!-- Instagram -->
-					<a href="#"><i class="fa">&#xf113;</i></a><!-- Git -->
-					<a href="#"><i class="fa">&#xf0e1;</i></a><!-- Linkedin -->
+					<a target="_blank" href="https://github.com/mateusgabriel042"><i class="fa">&#xf113;</i></a><!-- Git -->
+					<a target="_blank" href="https://www.linkedin.com/in/mateus-gabriel-a64885144/"><i class="fa">&#xf0e1;</i></a><!-- Linkedin -->
+					<a target="_blank" href="https://www.facebook.com/profile.php?id=100008191591182"><i class="fa">&#xf09a;</i></a><!-- Facebook -->
+					<a target="_blank" href="https://www.instagram.com/_mateus_mgscript/"><i class="fa">&#xf16d;</i></a><!-- Instagram -->
 				</div>
 			
 				<h2>Dados pessoais</h2>
