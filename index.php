@@ -166,7 +166,7 @@
 						<label>2º lugar</label>
 						<div>
 							<label>Encontro de Tecnologia de Parnamirim</label><br>
-							<label>IFRN - Campus Parnamirin</label>
+							<label>IFRN - Campus Parnamirim</label>
 						</div>
 					</li>
 
