@@ -294,7 +294,7 @@
 				</li>
 
 				<li>
-					<span>Prodrões de projetos</span>
+					<span>Padrões de projetos</span>
 					<div class="bar-progress-skill-5"></div>
 				</li>
 				<li>
