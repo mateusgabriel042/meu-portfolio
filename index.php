@@ -55,7 +55,7 @@
 			<section class="abstract" id="abstract">
 				<h2>Resumo</h2>
 				<article>
-					<p>Sou desenvolvedor Full Stack PHP, trabalho em projetos pessoais a mais de 5 anos, Minha maior criação foi a plataforma onde pretendo divulgar meus serviços à MGSCRIPT (não está em produção), tenho foco em aprimorar meus conhecimentos estudando e desenvolvendo o dia inteiro. Atualmente estou dedicando meu tempo estudando Inglês e desenvolvendo sistemas distribuídos.</p>
+					<p>Sou desenvolvedor Full Stack PHP, trabalho em projetos pessoais a mais de 3 anos, Minha maior criação foi a plataforma onde pretendo divulgar meus serviços à MGSCRIPT (não está em produção), tenho foco em aprimorar meus conhecimentos estudando e desenvolvendo o dia inteiro. Atualmente estou dedicando meu tempo estudando Inglês e desenvolvendo sistemas distribuídos.</p>
 				</article>
 			</section>
 
@@ -138,21 +138,14 @@
 					<li>
 						<label>01/2020 - 07/2022</label>
 						<div>
-							<label>Graduação em Anásile e Desenvolvimento de Sistemas) - 3º periodo</label><br>
+							<label>Bacharelado em Anásile e Desenvolvimento de Sistemas - 3º periodo</label><br>
 							<label>Estácio - Natal/RN</label>
 						</div>
 					</li>
 					<li>
 						<label>02/2014 - 11/2019</label>
 						<div>
-							<label>Curso Técnico em informática - Concluido</label><br>
-							<label>IFRN - Campus Macau</label>
-						</div>
-					</li>
-					<li>
-						<label>02/2014 - 11/2019</label>
-						<div>
-							<label>Ensino Médio - Concluido</label><br>
+							<label>Técnico em informática (concluído)</label><br>
 							<label>IFRN - Campus Macau</label>
 						</div>
 					</li>
@@ -216,11 +209,11 @@
 
 			<ul>
 				<li>
-					<span>PHP 7|8</span>
+					<span>PHP</span>
 					<div class="bar-progress-skill-9"></div>
 				</li>
 				<li>
-					<span>Laravel 8</span>
+					<span>Laravel</span>
 					<div class="bar-progress-skill-9"></div>
 				</li>
 				<li>
@@ -228,7 +221,7 @@
 					<div class="bar-progress-skill-5"></div>
 				</li>
 				<li>
-					<span>HTML5/CSS3</span>
+					<span>HTML/CSS</span>
 					<div class="bar-progress-skill-10"></div>
 				</li>
 				<li>
@@ -243,10 +236,6 @@
 				<li>
 					<span>React.js</span>
 					<div class="bar-progress-skill-7"></div>
-				</li>
-				<li>
-					<span>Style-components</span>
-					<div class="bar-progress-skill-9"></div>
 				</li>
 				<li>
 					<span>Vue.js</span>
@@ -317,14 +306,6 @@
 					<div class="bar-progress-skill-10"></div>
 				</li>
 
-				<li>
-					<span>CorelDraw X8</span>
-					<div class="bar-progress-skill-10"></div>
-				</li>
-				<li>
-					<span>Adobe After Effects</span>
-					<div class="bar-progress-skill-6"></div>
-				</li>
 			</ul>
 		</aside>
 		<button type="button" class="toggle-skills-cvmg" id="toggle-skills-cvmg">Habilidades</button>
