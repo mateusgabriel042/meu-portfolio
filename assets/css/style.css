@@ -34,9 +34,10 @@ input {outline:none;}
 ::-webkit-scrollbar-thumb {background-color:#222629;}
 
 
-aside.data-mg {position:fixed; left:0px; width:20%; height:100%; z-index:2; background:linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../img/background-aside.jpg") no-repeat; background-size:cover; background-position:center center;}
+aside.data-mg {position:fixed; left:0px; width:20%; height:100%; z-index:2; background-image: radial-gradient(circle at 50% -20.71%, #97bdff 0, #3c78f2 50%, #003886 100%);}
 aside.data-mg .content-data-mg {float:left; width:80%; margin-left:10%; margin-top:20px;}
-aside.data-mg .content-data-mg div.redes-sociais {float:left; width:100%; height:200px; display:flex; align-items:flex-end; justify-content:flex-start; background:url("../img/photo-mg.jpg") no-repeat; background-size:cover; background-position:center center;}
+aside.data-mg .content-data-mg div.area-photo {float:left; width:100px; height:100px; background-color:red;}
+aside.data-mg .content-data-mg div.redes-sociais {float:left; width:50%; background-color:black;}
 aside.data-mg .content-data-mg div.redes-sociais a {float:left; margin:0px; background-color:#fdfdfe; width:25px; height:25px; display:flex; justify-content:center; align-items:center; align-content:center; transition:0.3s;}
 aside.data-mg .content-data-mg div.redes-sociais a:last-child {border-radius:0 5px 0 0;}
 aside.data-mg .content-data-mg div.redes-sociais a i { color:#17202a !important;}
