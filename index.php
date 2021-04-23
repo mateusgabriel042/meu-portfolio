@@ -12,7 +12,7 @@
 		<aside class="data-mg" id="data-mg">
 			<div class="content-data-mg">
 				<h1>Mateus Gabriel</h1>
-				<label>Dev. Full Stack PHP</label>
+				<label>Desenvolvedor web Full Stack</label>
 				<div class="area-photo">
 					<img src="assets/img/photo-mg.jpg" alt="Mateus Gabriel" />
 				</div>
@@ -25,18 +25,17 @@
 			
 				<h2>Dados pessoais</h2>
 				<ul>
-					<li><b>Nacionalidade:</b> Brasileiro</li>
-					<li><b>Cidade:</b> Natal/RN</li>
-					<li><b>Telefone:</b> +55 (84) 99993 - 2183</li>
-					<li><b>Email:</b> mateus.gabriel042@gmail.com</li>
-					<li><b>Data de nascimento:</b> 04/02/1999</li>
-					<li><b>Estado civil:</b> Solteiro</li>
+					<li><i class="fa">&#xf1fd;</i>  22 anos</li>
+					<li><i class="fa">&#xf124;</i>  Natal/RN</li>
+					<li><i class="fa">&#xf183;</i>  Solteiro</li>
+					<li><i class="fa">&#xf095;</i>  (84) 99993 - 2183</li>
+					<li><i class="fa">&#xf003;</i>  mateus.gabriel042@gmail.com</li>
 				</ul>
 
 				<h2>Línguas Estrangeiras</h2>
 				<ul>
-					<li><b>Inglês:</b> intermediário</li>
-					<li><b>Espanhol:</b> intermediário</li>
+					<li><b>Inglês:</b>&nbsp;intermediário</li>
+					<li><b>Espanhol:</b>&nbsp;intermediário</li>
 				</ul>
 			</div>
 		</aside>
@@ -58,8 +57,10 @@
 			<section class="abstract" id="abstract">
 				<h2>Resumo</h2>
 				<article>
-					<p>Sou desenvolvedor Full Stack PHP, trabalho em projetos pessoais a mais de 3 anos, Minha maior criação foi a plataforma onde pretendo divulgar meus serviços à MGSCRIPT (não está em produção), tenho foco em aprimorar meus conhecimentos estudando e desenvolvendo o dia inteiro. Atualmente estou dedicando meu tempo estudando Inglês e desenvolvendo sistemas distribuídos.</p>
+					<p>Sou desenvolvedor web full stack, trabalho em projetos pessoais a mais de 3 anos, minha maior criação foi à MGSCRIPT(plataforma onde pretendo divulgar meus serviços, ainda não está em produção), tenho foco em aprimorar meus conhecimentos estudando e desenvolvendo o dia inteiro. Atualmente estou dedicando meu tempo estudando Inglês e desenvolvendo sistemas.</p>
 				</article>
+				<a target="_blank" href="https://docs.google.com/document/d/1o_ccDMUHTmElE-KDThLiSL_uiqIRZBI1dxdcGbMMyDQ/edit?usp=sharing">Currículo</a>
+				<a target="_blank" href="https://www.linkedin.com/in/mateus-gabriel-a64885144/">Linkedin</a>
 			</section>
 
 
@@ -123,15 +124,14 @@
 			<section class="experience" id="experience">
 				<h2>Experiências</h2>
 				<ul>
-					<!--<li>
-						<label>9999 - 9999</label>
-						<div>
-							<label>Desenfolvedor Fullstack - 70h</label><br>
-							<label>A & L Informática</label>
-						</div>
-					</li>-->
+					<li>
+						<label class="time">03/2019 - 09/2019</label>
+						<label class="position-company">Desenvolvedor web full stack - A & L Informática</label><br>
+						<label class="lb-tasks">O que fiz lá:</label>
+						<p class="info-tasks">Trabalhei na criação de websites e aplicações web utilizando as tecnologias: PHP, Laravel e Javascript.</p>
+					</li>
 					
-					<label class="not-item">Em busca do primeiro emprego.</label>
+					<!--<label class="not-item">Em busca do primeiro emprego.</label>-->
 				</ul>
 			</section>
 
@@ -139,18 +139,14 @@
 				<h2>Formação</h2>
 				<ul>
 					<li>
-						<label>01/2020 - 07/2022</label>
-						<div>
-							<label>Bacharelado em Anásile e Desenvolvimento de Sistemas - 3º periodo</label><br>
-							<label>Estácio - Natal/RN</label>
-						</div>
+						<label class="time">01/2020 - 07/2022</label>
+						<label class="course">Bacharelado em Anásile e Desenvolvimento de Sistemas (3º periodo)</label><br>
+						<label class="locale">Estácio - Natal/RN</label>
 					</li>
 					<li>
-						<label>02/2014 - 11/2019</label>
-						<div>
-							<label>Técnico em informática (concluído)</label><br>
-							<label>IFRN - Campus Macau</label>
-						</div>
+						<label class="time">02/2014 - 11/2019</label>
+						<label class="course">Técnico em informática (concluído)</label><br>
+						<label class="locale">IFRN - Campus Macau</label>
 					</li>
 				</ul>
 			</section>
@@ -159,19 +155,15 @@
 				<h2>Premiações</h2>
 				<ul>
 					<li>
-						<label>2º lugar</label>
-						<div>
-							<label>Encontro de Tecnologia de Parnamirim</label><br>
-							<label>IFRN - Campus Parnamirim</label>
-						</div>
+						<label class="colocation">2º lugar</label>
+						<label class="event">Encontro de Tecnologia de Parnamirim</label><br>
+						<label class="locale">IFRN - Campus Parnamirim</label>
 					</li>
 
 					<li>
-						<label>3º lugar</label>
-						<div>
-							<label>1ª Olimpieda de Programação do IFRN Campus Macau</label><br>
-							<label>IFRN - Campus Macau</label>
-						</div>
+						<label class="colocation">3º lugar</label>
+						<label class="event">1ª Olimpieda de Programação do IFRN Campus Macau</label><br>
+						<label class="locale">IFRN - Campus Macau</label>
 					</li>
 				</ul>
 			</section>
@@ -181,139 +173,136 @@
 				<h2>Atividades Extracurriculares</h2>
 				<ul>
 					<li>
-						<label>05/2017 - 12/2017</label>
-						<div>
-							<label>Monitoria de POO - 70h</label><br>
-							<label>IFRN Campus Macau</label>
-						</div>
+						<label class="time">05/2017 - 12/2017</label>
+						<label class="event">Monitoria de POO - 70h</label><br>
+						<label class="locale">IFRN Campus Macau</label>
 					</li>
 
 					<li>
-						<label>11/2017 - 11/2017</label>
-						<div>
-							<label>IV CONEDU - 40h</label><br>
-							<label>João Pessoa/PB</label>
-						</div>
+						<label class="time">11/2017 - 11/2017</label>
+						<label class="event">IV CONEDU - 40h</label><br>
+						<label class="locale">João Pessoa/PB</label>
 					</li>
 
 					<li>
-						<label>12/2016 - 12/2016</label>
-						<div>
-							<label>XI CONNEPI - 40h</label><br>
-							<label>Maceió/AL</label>
-						</div>
+						<label class="time">12/2016 - 12/2016</label>
+						<label class="event">XI CONNEPI - 40h</label><br>
+						<label class="locale">Maceió/AL</label>
 					</li>
 				</ul>
 			</section>
 		</main>
 
 		<aside class="skills" id="skills">
-			<h2>Habilidades</h2>
+			<div class="content">
+				<h2>Habilidades</h2>
 
-			<ul>
-				<li>
-					<span>PHP</span>
-					<div class="bar-progress-skill-9"></div>
-				</li>
-				<li>
-					<span>Laravel</span>
-					<div class="bar-progress-skill-9"></div>
-				</li>
-				<li>
-					<span>Wordpress</span>
-					<div class="bar-progress-skill-5"></div>
-				</li>
-				<li>
-					<span>HTML/CSS</span>
-					<div class="bar-progress-skill-10"></div>
-				</li>
-				<li>
-					<span>Javascript (ECMAScript 6)</span>
-					<div class="bar-progress-skill-10"></div>
-				</li>
-				
-				<li>
-					<span>Next.js</span>
-					<div class="bar-progress-skill-7"></div>
-				</li>
-				<li>
-					<span>React.js</span>
-					<div class="bar-progress-skill-7"></div>
-				</li>
-				<li>
-					<span>Vue.js</span>
-					<div class="bar-progress-skill-7"></div>
-				</li>
-				<li>
-					<span>Bootstrap 5</span>
-					<div class="bar-progress-skill-10"></div>
-				</li>
-				
-				<li>
-					<span>MySQL</span>
-					<div class="bar-progress-skill-10"></div>
-				</li>
-				
-				<li>
-					<span>Sass</span>
-					<div class="bar-progress-skill-10"></div>
-				</li>
-				<li>
-					<span>Jquery</span>
-					<div class="bar-progress-skill-10"></div>
-				</li>
-			</ul>
+				<ul>
+					<li>
+						<span>PHP</span>
+						<div class="bar-progress-skill-9"></div>
+					</li>
+					<li>
+						<span>Laravel</span>
+						<div class="bar-progress-skill-9"></div>
+					</li>
+					<li>
+						<span>Wordpress</span>
+						<div class="bar-progress-skill-5"></div>
+					</li>
+					<li>
+						<span>HTML/CSS</span>
+						<div class="bar-progress-skill-10"></div>
+					</li>
+					<li>
+						<span>Javascript (ECMAScript 6)</span>
+						<div class="bar-progress-skill-10"></div>
+					</li>
+					
+					<li>
+						<span>Next.js</span>
+						<div class="bar-progress-skill-7"></div>
+					</li>
+					<li>
+						<span>React.js</span>
+						<div class="bar-progress-skill-7"></div>
+					</li>
+					<li>
+						<span>Vue.js</span>
+						<div class="bar-progress-skill-7"></div>
+					</li>
+					<li>
+						<span>Bootstrap 5</span>
+						<div class="bar-progress-skill-10"></div>
+					</li>
+					
+					<li>
+						<span>MySQL</span>
+						<div class="bar-progress-skill-10"></div>
+					</li>
+					
+					<li>
+						<span>Sass</span>
+						<div class="bar-progress-skill-10"></div>
+					</li>
+					<li>
+						<span>Jquery</span>
+						<div class="bar-progress-skill-10"></div>
+					</li>
+				</ul>
 
-			<h3>Essencial e diferencial</h3>
-				
-			<ul>
-				<li>
-					<span>Docker</span>
-					<div class="bar-progress-skill-6"></div>
-				</li>
-				<li>
-					<span>Git</span>
-					<div class="bar-progress-skill-9"></div>
-				</li>
-				<li>
-					<span>POO</span>
-					<div class="bar-progress-skill-10"></div>
-				</li>
+				<h3>Essencial e diferencial</h3>
+					
+				<ul>
+					<li>
+						<span>Docker</span>
+						<div class="bar-progress-skill-6"></div>
+					</li>
+					<li>
+						<span>Git</span>
+						<div class="bar-progress-skill-9"></div>
+					</li>
+					<li>
+						<span>POO</span>
+						<div class="bar-progress-skill-10"></div>
+					</li>
 
-				<li>
-					<span>API RESTful</span>
-					<div class="bar-progress-skill-9"></div>
-				</li>
+					<li>
+						<span>API RESTful</span>
+						<div class="bar-progress-skill-9"></div>
+					</li>
 
-				<li>
-					<span>Padrões de projetos</span>
-					<div class="bar-progress-skill-5"></div>
-				</li>
-				<li>
-					<span>Modelagem de dados</span>
-					<div class="bar-progress-skill-9"></div>
-				</li>
+					<li>
+						<span>Padrões de projetos</span>
+						<div class="bar-progress-skill-5"></div>
+					</li>
+					<li>
+						<span>Modelagem de dados</span>
+						<div class="bar-progress-skill-9"></div>
+					</li>
 
-				<li>
-					<span>SEO</span>
-					<div class="bar-progress-skill-9"></div>
-				</li>
+					<li>
+						<span>SEO</span>
+						<div class="bar-progress-skill-9"></div>
+					</li>
 
-				<li>
-					<span>AWS</span>
-					<div class="bar-progress-skill-6"></div>
-				</li>
-				
-				<li>
-					<span>Hostinger</span>
-					<div class="bar-progress-skill-10"></div>
-				</li>
+					<li>
+						<span>AWS</span>
+						<div class="bar-progress-skill-6"></div>
+					</li>
+					
+					<li>
+						<span>Hostinger</span>
+						<div class="bar-progress-skill-10"></div>
+					</li>
 
-			</ul>
+				</ul>
+			</div>
 		</aside>
 		<button type="button" class="toggle-skills-cvmg" id="toggle-skills-cvmg">Habilidades</button>
 
 		<script type="text/javascript" src="assets/js/jquery-3.2.0.min.js"></script>
+		<script src="assets/js/particles.min.js"></script>
 		<script type="text/javascript" src="assets/js/script.js"></script>
 	</body>
 </html>
