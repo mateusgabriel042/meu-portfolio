@@ -5,6 +5,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Raleway|segoe ui');
 */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i&display=swap&subset=cyrillic-ext");
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 
@@ -17,11 +18,12 @@ html, body {margin:0px; padding:0px; width:100%; height:100%;}
 ul {float:left; margin:0px; padding:0px; list-style:none;}
 ul li {float:left;}
 a {text-decoration:none; cursor:pointer;}
+p {line-height:22px;}
 p, h1, h2, h3, h4, h5, h6 {margin:0px; padding:0px;}
 button:focus, select:focus, textarea:focus {outline:none;}
 button {cursor:pointer;}
 input {outline:none;}
-* {font-family:"Roboto";}
+* {font-family:"Open Sans", "roboto";}
 
 
 /*formatacao do scrollbar
@@ -34,19 +36,21 @@ input {outline:none;}
 ::-webkit-scrollbar-thumb {background-color:#222629;}
 
 
-aside.data-mg {position:fixed; left:0px; width:20%; height:100%; z-index:2; background-image: radial-gradient(circle at 50% -20.71%, #97bdff 0, #3c78f2 50%, #003886 100%);}
-aside.data-mg .content-data-mg {float:left; width:80%; margin-left:10%; margin-top:20px;}
-aside.data-mg .content-data-mg div.area-photo {float:left; width:100px; height:100px; background-color:red;}
-aside.data-mg .content-data-mg div.redes-sociais {float:left; width:50%; background-color:black;}
-aside.data-mg .content-data-mg div.redes-sociais a {float:left; margin:0px; background-color:#fdfdfe; width:25px; height:25px; display:flex; justify-content:center; align-items:center; align-content:center; transition:0.3s;}
-aside.data-mg .content-data-mg div.redes-sociais a:last-child {border-radius:0 5px 0 0;}
-aside.data-mg .content-data-mg div.redes-sociais a i { color:#17202a !important;}
-aside.data-mg .content-data-mg div.redes-sociais a:hover {background-color:#03a6b0; transition:0.3s;}
-aside.data-mg .content-data-mg h1 {margin-bottom:0px; width:100%; color:#02be6e;}
-aside.data-mg .content-data-mg label {float:left; margin-bottom:10px; width:100%; color:#fdfdfe;}
-aside.data-mg .content-data-mg h2 {float:left; color:#02be6e; margin:10px 0px; width:100%; font-size:18px;}
+aside.data-mg {position:fixed; left:0px; width:20%; height:100%; z-index:2; background-image: radial-gradient(circle at 50% -20.71%, #a3a7ff 0, #7a8ffc 25%, #3c78f2 50%, #0063e8 75%, #0051de 100%);}
+aside.data-mg .content-data-mg {position:absolute; width:80%; margin-left:10%; margin-top:20px; display:flex; justify-content:center; flex-wrap:wrap;}
+aside.data-mg .content-data-mg div.area-photo {float:left; margin-top:15px; width:150px; height:150px; background-color:red; border-radius:100%; overflow:hidden; border:3px solid #ffffff;}
+aside.data-mg .content-data-mg div.area-photo img {height:100%;}
+aside.data-mg .content-data-mg div.redes-sociais {float:left; width:100%; margin-top:15px; display:flex; justify-content:center;}
+aside.data-mg .content-data-mg div.redes-sociais a {float:left; margin:0px; background-color:#ffffff; color:#17202a; width:25px; height:25px; display:flex; justify-content:center; align-items:center; align-content:center; transition:all 0.3s;}
+aside.data-mg .content-data-mg div.redes-sociais a:first-child {border-radius:5px 0 0 5px; padding-left:3px;}
+aside.data-mg .content-data-mg div.redes-sociais a:last-child {border-radius:0 5px 5px 0; padding-right:3px;}
+aside.data-mg .content-data-mg div.redes-sociais a:hover {background-color:#17202a; color:#ffffff; transition:all 0.3s;}
+aside.data-mg .content-data-mg h1 {margin-bottom:0px; width:100%; color:#ffffff; font-weight:900;}
+aside.data-mg .content-data-mg label {float:left; margin-bottom:10px; font-size:14px; width:100%; color:#fdfdfe;}
+aside.data-mg .content-data-mg h2 {float:left; color:#ffffff; margin:10px 0px; margin-top:25px; width:100%; font-size:18px;}
 aside.data-mg .content-data-mg ul {width:100%;}
-aside.data-mg .content-data-mg ul li {width:100%; margin:4px 0px; font-size:13px; color:#fdfdfe;}
+aside.data-mg .content-data-mg ul li {width:100%; margin:4px 0px; font-size:13px; color:#fdfdfe; display:flex; align-items:center; align-content:center;}
+aside.data-mg .content-data-mg ul li i {float:left; width:10px; margin-right:11px;}
 
 button.toggle-data-cvmg {transform:rotate(90deg); position:fixed; width:150px; z-index:10; left:-64px; padding:2px; bottom:100px; background-color:#02be6e; border:none; border-radius:0px 7px 0px 7px; color:#fdfdfe; display:none;}
 
@@ -55,8 +59,7 @@ button.toggle-data-cvmg {transform:rotate(90deg); position:fixed; width:150px; z
 
 @media (min-width:0px) and (max-width:440px) {
 	aside.data-mg {position:fixed; transform:translateX(-130%); width:100%; height:100%; z-index:6; overflow-y:auto; padding-bottom:20px; top:0px !important;}
-	aside.data-mg .content-data-mg {padding-bottom:20px;}
-	aside.data-mg .content-data-mg div.redes-sociais {background-position:top center; height:300px;}
+	aside.data-mg .content-data-mg {padding-bottom:20px; align-content:flex-start; align-items:flex-start;}
 	button.toggle-data-cvmg {display:block;}
 }
 @media (min-width:441px) and (max-width:630px) {
@@ -77,7 +80,7 @@ button.toggle-data-cvmg {transform:rotate(90deg); position:fixed; width:150px; z
 
 
 
-nav {position:fixed !important; top:0px; z-index:5; right:0px; width:80%; background-color:#02be6e; display:flex;}
+nav {position:fixed !important; top:0px; z-index:5; right:0px; width:80%; background-color:#17202a; display:flex;}
 nav ul {display:flex; padding:0px 20px;}
 nav ul li {padding:20px; cursor:pointer; color:#fdfdfe; background-size:0px;
   vertical-align: middle;
@@ -97,7 +100,7 @@ nav ul li:before {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #029c5a;
+  background-color:#000000;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 0 50%;
@@ -139,18 +142,9 @@ button.toggle-nav i {transform:translateY(-1px);}
 
 
 
-main {position:absolute; width:54%; top:100px; left:23%; animation-name:move; animation-duration:1s; background-color:; animation-iteration-count:1;}
-main section {float:left; width:100%; margin-bottom:20px; display:flex; flex-wrap:wrap;}
-main section h2 {float:left; width:100%; color:#17202a; font-size:20px; margin-bottom:20px; padding:5px 0px;
-	border: 1px solid transparent;
-	border-top:none;
-	border-left:none;
-	border-right:none;
-	-moz-border-image: -moz-linear-gradient(right, #e8e8e8 0%, #ffffff 100%);
-	-webkit-border-image: -webkit-linear-gradient(right, #e8e8e8 0%, #ffffff 100%);
-	border-image: linear-gradient(to right, #e8e8e8 0%, #ffffff 100%);
-	border-image-slice: 1;
-}
+main {position:absolute; width:54%; top:100px; left:23%; animation-name:move; animation-duration:1s; animation-iteration-count:1; display:flex; flex-wrap:wrap;}
+main section {float:left; width:100%; margin-bottom:20px; display:flex; flex-wrap:wrap; border-radius:7px; padding:15px 25px; box-shadow:0px 6px 15px 0px rgba(0,0,0,0.1);}
+main section h2 {float:left; width:100%; color:#17202a; font-size:20px; margin-bottom:20px; padding:5px 0px;}
 
 main section h3 {float:left; width:100%; font-size:16px; color:#17202a; margin-bottom:10px;}
 @keyframes move {
@@ -159,11 +153,13 @@ main section h3 {float:left; width:100%; font-size:16px; color:#17202a; margin-b
 }
 
 main section.abstract article {float:left; width:100%;}
-main section.abstract article p {float:left; width:100%; color:#999999; font-size:14px; margin-bottom:10px; margin-top:-8px; text-align:justify; background-color:;}
+main section.abstract article p {float:left; width:100%; color:#999999; font-size:14px; margin-bottom:10px; margin-top:-8px; text-align:justify;}
+main section.abstract a {background-color:#666666; padding:3px 30px; border-radius:13px; font-size:13px; color:#fdfdfe; margin-right:10px; margin-top:5px; transition:0.3s;}
+main section.abstract a:hover {background-color:#0063e8; transition:0.3s;}
 
 
-main section.portfolio div.projects {float:left; width:100%; display:flex; flex-wrap:wrap; align-content:flex-start;}
-main section.portfolio div.projects div.container {float:left; width:42%; margin-right:30px; margin-bottom:15px; border:1px solid rgba(0,0,0,0.1); border-radius:0px; padding:25px 0px; display:flex; flex-wrap:wrap; justify-content:center; align-content:flex-start;}
+main section.portfolio div.projects {float:left; width:100%; display:flex; flex-wrap:wrap; align-content:flex-start; justify-content:center;}
+main section.portfolio div.projects div.container {float:left; width:42%; margin:0px 17px; margin-bottom:25px; box-shadow:0px 6px 15px 0px rgba(0,0,0,0.1); border-radius:7px; padding:25px 0px; display:flex; flex-wrap:wrap; justify-content:center; align-content:flex-start;}
 main section.portfolio div.projects div.container div.box-img {float:left; width:80%; height:160px; margin-bottom:15px; background-repeat:no-repeat; background-size:cover; background-position:center; border:1px solid #e8e8e8;}
 main section.portfolio div.projects div.container:nth-child(1) div.box-img {background-image:url('../img/portfolio-1.png');}
 main section.portfolio div.projects div.container:nth-child(2) div.box-img {background-image:url('../img/img-default.png');}
@@ -179,28 +175,31 @@ main section.portfolio div.projects div.container div.box-info a {float:left; ma
 	main section.portfolio div.projects div.container div.box-info {width:90%;}
 }
 
+main section.experience ul {float:left; width:100%; display:flex; flex-wrap:wrap;}
+main section.experience ul li {float:left; width:100%; margin-bottom:5px; background-color:rgba(0,0,0,0.04); padding:10px; border-radius:5px;}
+main section.experience ul li label.time {float:left; width:100%; font-weight:bold; color:#ff6b35; font-size:13px; margin-bottom:10px;}
+main section.experience ul li label.position-company {float:left; width:100%; color:#666666; font-weight:bold; font-size:14px; margin-bottom:10px;}
+main section.experience ul li label.lb-tasks {float:left; width:100%; font-weight:bold; color:#666666; font-size:13px;}
+main section.experience ul li p.info-tasks {float:left; width:100%; color:#999999; font-size:13px;}
 main section.experience ul label.not-item {float:left; font-size:13px; margin-bottom:20px; color:#ebb134; font-style:italic;}
 
 main section.formation ul {float:left; width:100%; display:flex; flex-wrap:wrap;}
-main section.formation ul li {float:left; width:100%; margin-bottom:5px; display:flex; background-color:rgba(0,0,0,0.04); padding:10px; border-radius:5px;}
-main section.formation ul li > label {width:150px; color:#17202a; font-size:13px;}
-main section.formation ul li div {margin-left:10px; width:85%;}
-main section.formation ul li div label {float:left; width:100%; color:#17202a; font-size:14px; font-weight:bold;}
-main section.formation ul li div label:last-child {font-size:12px; font-style:italic; font-weight:normal;}
+main section.formation ul li {float:left; width:100%; margin-bottom:5px; background-color:rgba(0,0,0,0.04); padding:10px; border-radius:5px;}
+main section.formation ul li label.time {float:left; width:100%; font-weight:bold; color:#ff6b35; font-size:13px; margin-bottom:10px;}
+main section.formation ul li label.course {float:left; width:100%; color:#666666; font-weight:bold; font-size:14px;}
+main section.formation ul li label.locale {font-size:13px; color:#999999;}
 
 main section.premiations ul {float:left; width:100%; display:flex; flex-wrap:wrap;}
-main section.premiations ul li {float:left; width:100%; margin-bottom:10px; display:flex; background-color:rgba(0,0,0,0.04); padding:10px; border-radius:5px;}
-main section.premiations ul li > label {width:150px; color:#17202a; font-size:14px;}
-main section.premiations ul li div {margin-left:10px; width:85%;}
-main section.premiations ul li div label {float:left; width:100%; color:#17202a; font-size:14px; font-weight:bold;}
-main section.premiations ul li div label:last-child {font-size:12px; font-style:italic; font-weight:normal;}
+main section.premiations ul li {float:left; width:100%; margin-bottom:10px; background-color:rgba(0,0,0,0.04); padding:10px; border-radius:5px;}
+main section.premiations ul li label.colocation {float:left; width:100%; font-weight:bold; color:#ff6b35; font-size:13px; margin-bottom:10px;}
+main section.premiations ul li label.event {float:left; width:100%; color:#666666; font-weight:bold; font-size:14px;}
+main section.premiations ul li label.locale {font-size:13px; color:#999999;}
 
 main section.activities ul {float:left; width:100%; display:flex; flex-wrap:wrap;}
-main section.activities ul li {float:left; width:100%; margin-bottom:10px; display:flex; background-color:rgba(0,0,0,0.04); padding:10px; border-radius:5px;}
-main section.activities ul li > label {width:150px; color:#17202a; font-size:14px;}
-main section.activities ul li div {margin-left:10px; width:85%;}
-main section.activities ul li div label {float:left; width:100%; color:#17202a; font-size:14px; font-weight:bold;}
-main section.activities ul li div label:last-child {font-size:12px; font-style:italic; font-weight:normal;}
+main section.activities ul li {float:left; width:100%; margin-bottom:10px; background-color:rgba(0,0,0,0.04); padding:10px; border-radius:5px;}
+main section.activities ul li label.time {float:left; width:100%; font-weight:bold; color:#ff6b35; font-size:13px; margin-bottom:10px;}
+main section.activities ul li label.event {float:left; width:100%; color:#666666; font-weight:bold; font-size:14px;}
+main section.activities ul li label.locale {font-size:13px; color:#999999;}
 
 @media (min-width:0px) and (max-width:560px) {
 	main {width:80%; left:10%; top:70px;}
@@ -218,47 +217,39 @@ main section.activities ul li div label:last-child {font-size:12px; font-style:i
 	main ul li div label:last-child {font-size:10px;}
 }
 @media (min-width:750px) and (max-width:1100px) {
-	main {width:68%; left:40px; top:70px;}
+	main {width:68%; left:40px; top:100px;}
 }
 
 
 
 
-aside.skills {position:absolute; width:18%; top:100px; right:30px; background-color:;}
-aside.skills h2 {float:left; width:100%; color:#17202a; font-size:20px; margin-bottom:20px; padding:5px 0px;
-	border: 1px solid transparent;
-	border-top:none;
-	border-left:none;
-	border-right:none;
-	-moz-border-image: -moz-linear-gradient(right, #e8e8e8 0%, #ffffff 100%);
-	-webkit-border-image: -webkit-linear-gradient(right, #e8e8e8 0%, #ffffff 100%);
-	border-image: linear-gradient(to right, #e8e8e8 0%, #ffffff 100%);
-	border-image-slice: 1;
-}
+aside.skills {position:absolute; width:18%; top:100px; display:flex; flex-wrap:wrap; right:30px; border-radius:7px; box-shadow:0px 6px 15px 0px rgba(0,0,0,0.1);}
+aside.skills div.content {display:flex; flex-wrap:wrap; padding:15px 25px;}
+aside.skills h2 {float:left; width:100%; color:#17202a; font-size:20px; margin-bottom:20px; padding:5px 0px;}
 aside.skills h3 {float:left; width:100%; font-size:16px; color:#17202a; margin:10px 0px;}
-aside.skills ul {float:left; width:100%;}
+aside.skills ul {float:left; width:100%; display:flex; flex-wrap:wrap; }
 aside.skills ul li {float:left; display:block !important; width:100%; margin-bottom:8px;}
 aside.skills ul li span {float:left; width:100%; font-size:16px; color:#999999; margin-bottom:0px;}
 aside.skills ul li div.bar-progress-skill-1 {float:left; width:100% !important; height:5px; margin-left:0px; margin-top:7px; background-color:#e8e8e8; border-radius:5px;}
-aside.skills ul li div.bar-progress-skill-1:before {float:left; content:" "; visibility:visible; width:10%; height:5px; border-radius:5px; animation-name:barProgress1; animation-duration:1.5s; animation-iteration-count:1; background-image: linear-gradient(19deg, #666666 0%, #666666 100%);}
+aside.skills ul li div.bar-progress-skill-1:before {float:left; content:" "; visibility:visible; width:10%; height:5px; border-radius:5px; animation-name:barProgress1; animation-duration:1.5s; animation-iteration-count:1; background-color:#17202a;}
 aside.skills ul li div.bar-progress-skill-2 {float:left; width:100% !important; height:5px; margin-left:0px; margin-top:7px; background-color:#e8e8e8; border-radius:5px;}
-aside.skills ul li div.bar-progress-skill-2:before {float:left; content:" "; visibility:visible; width:20%; height:5px; border-radius:5px; animation-name:barProgress2; animation-duration:1.5s; animation-iteration-count:1; background-image: linear-gradient(19deg, #666666 0%, #666666 100%);}
+aside.skills ul li div.bar-progress-skill-2:before {float:left; content:" "; visibility:visible; width:20%; height:5px; border-radius:5px; animation-name:barProgress2; animation-duration:1.5s; animation-iteration-count:1; background-color:#17202a;}
 aside.skills ul li div.bar-progress-skill-3 {float:left; width:100% !important; height:5px; margin-left:0px; margin-top:7px; background-color:#e8e8e8; border-radius:5px;}
-aside.skills ul li div.bar-progress-skill-3:before {float:left; content:" "; visibility:visible; width:30%; height:5px; border-radius:5px; animation-name:barProgress3; animation-duration:1.5s; animation-iteration-count:1; background-image: linear-gradient(19deg, #666666 0%, #666666 100%);}
+aside.skills ul li div.bar-progress-skill-3:before {float:left; content:" "; visibility:visible; width:30%; height:5px; border-radius:5px; animation-name:barProgress3; animation-duration:1.5s; animation-iteration-count:1; background-color:#17202a;}
 aside.skills ul li div.bar-progress-skill-4 {float:left; width:100% !important; height:5px; margin-left:0px; margin-top:7px; background-color:#e8e8e8; border-radius:5px;}
-aside.skills ul li div.bar-progress-skill-4:before {float:left; content:" "; visibility:visible; width:40%; height:5px; border-radius:5px; animation-name:barProgress4; animation-duration:1.5s; animation-iteration-count:1; background-image: linear-gradient(19deg, #666666 0%, #666666 100%);}
+aside.skills ul li div.bar-progress-skill-4:before {float:left; content:" "; visibility:visible; width:40%; height:5px; border-radius:5px; animation-name:barProgress4; animation-duration:1.5s; animation-iteration-count:1; background-color:#17202a;}
 aside.skills ul li div.bar-progress-skill-5 {float:left; width:100% !important; height:5px; margin-left:0px; margin-top:7px; background-color:#e8e8e8; border-radius:5px;}
-aside.skills ul li div.bar-progress-skill-5:before {float:left; content:" "; visibility:visible; width:50%; height:5px; border-radius:5px; animation-name:barProgress5; animation-duration:1.5s; animation-iteration-count:1; background-image: linear-gradient(19deg, #666666 0%, #666666 100%);}
+aside.skills ul li div.bar-progress-skill-5:before {float:left; content:" "; visibility:visible; width:50%; height:5px; border-radius:5px; animation-name:barProgress5; animation-duration:1.5s; animation-iteration-count:1; background-color:#17202a;}
 aside.skills ul li div.bar-progress-skill-6 {float:left; width:100% !important; height:5px; margin-left:0px; margin-top:7px; background-color:#e8e8e8; border-radius:5px;}
-aside.skills ul li div.bar-progress-skill-6:before {float:left; content:" "; visibility:visible; width:60%; height:5px; border-radius:5px; animation-name:barProgress6; animation-duration:1.5s; animation-iteration-count:1; background-image: linear-gradient(19deg, #666666 0%, #666666 100%);}
+aside.skills ul li div.bar-progress-skill-6:before {float:left; content:" "; visibility:visible; width:60%; height:5px; border-radius:5px; animation-name:barProgress6; animation-duration:1.5s; animation-iteration-count:1; background-color:#17202a;}
 aside.skills ul li div.bar-progress-skill-7 {float:left; width:100% !important; height:5px; margin-left:0px; margin-top:7px; background-color:#e8e8e8; border-radius:5px;}
-aside.skills ul li div.bar-progress-skill-7:before {float:left; content:" "; visibility:visible; width:70%; height:5px; border-radius:5px; animation-name:barProgress7; animation-duration:1.5s; animation-iteration-count:1; background-image: linear-gradient(19deg, #666666 0%, #666666 100%);}
+aside.skills ul li div.bar-progress-skill-7:before {float:left; content:" "; visibility:visible; width:70%; height:5px; border-radius:5px; animation-name:barProgress7; animation-duration:1.5s; animation-iteration-count:1; background-color:#17202a;}
 aside.skills ul li div.bar-progress-skill-8 {float:left; width:100% !important; height:5px; margin-left:0px; margin-top:7px; background-color:#e8e8e8; border-radius:5px;}
-aside.skills ul li div.bar-progress-skill-8:before {float:left; content:" "; visibility:visible; width:80%; height:5px; border-radius:5px; animation-name:barProgress8; animation-duration:1.5s; animation-iteration-count:1; background-image: linear-gradient(19deg, #666666 0%, #666666 100%);}
+aside.skills ul li div.bar-progress-skill-8:before {float:left; content:" "; visibility:visible; width:80%; height:5px; border-radius:5px; animation-name:barProgress8; animation-duration:1.5s; animation-iteration-count:1; background-color:#17202a;}
 aside.skills ul li div.bar-progress-skill-9 {float:left; width:100% !important; height:5px; margin-left:0px; margin-top:7px; background-color:#e8e8e8; border-radius:5px;}
-aside.skills ul li div.bar-progress-skill-9:before {float:left; content:" "; visibility:visible; width:90%; height:5px; border-radius:5px; animation-name:barProgress9; animation-duration:1.5s; animation-iteration-count:1; background-image: linear-gradient(19deg, #666666 0%, #666666 100%);}
+aside.skills ul li div.bar-progress-skill-9:before {float:left; content:" "; visibility:visible; width:90%; height:5px; border-radius:5px; animation-name:barProgress9; animation-duration:1.5s; animation-iteration-count:1; background-color:#17202a;}
 aside.skills ul li div.bar-progress-skill-10 {float:left; width:100% !important; height:5px; margin-left:0px; margin-top:7px; background-color:#e2e1dc; border-radius:5px;}
-aside.skills ul li div.bar-progress-skill-10:before {float:left; content:" "; visibility:visible; width:100%; height:5px; border-radius:5px; animation-name:barProgress10; animation-duration:1.5s; animation-iteration-count:1; background-image: linear-gradient(19deg, #666666 0%, #666666 100%);}
+aside.skills ul li div.bar-progress-skill-10:before {float:left; content:" "; visibility:visible; width:100%; height:5px; border-radius:5px; animation-name:barProgress10; animation-duration:1.5s; animation-iteration-count:1; background-color:#17202a;}
 @keyframes barProgress1 {
 	0% {width:0%;}
 	100% {width:10%;}
