@@ -52,7 +52,7 @@ aside.data-mg .content-data-mg ul {width:100%;}
 aside.data-mg .content-data-mg ul li {width:100%; margin:4px 0px; font-size:13px; color:#fdfdfe; display:flex; align-items:center; align-content:center;}
 aside.data-mg .content-data-mg ul li i {float:left; width:10px; margin-right:11px;}
 
-button.toggle-data-cvmg {transform:rotate(90deg); position:fixed; width:150px; z-index:10; left:-64px; padding:2px; bottom:100px; background-color:#02be6e; border:none; border-radius:0px 7px 0px 7px; color:#fdfdfe; display:none;}
+button.toggle-data-cvmg {transform:rotate(90deg); position:fixed; width:150px; z-index:10; left:-64px; padding:2px; bottom:100px; background-color:#17202a; border:none; border-radius:0px 7px 0px 7px; color:#fdfdfe; display:none;}
 
 .effect-show-data-mg {transform:translateX(0px) !important; transition:0.5s !important;}
 .effect-hide-data-mg {transform:translateX(-130%) !important; transition:0.5s !important;}
@@ -63,7 +63,7 @@ button.toggle-data-cvmg {transform:rotate(90deg); position:fixed; width:150px; z
 	button.toggle-data-cvmg {display:block;}
 }
 @media (min-width:441px) and (max-width:630px) {
-	aside.data-mg {transform:translateX(-130%); position:absolute; height:100em; width:50%; padding-bottom:20px; top:50px !important;}
+	aside.data-mg {transform:translateX(-130%); position:absolute; height:100em; width:100%; padding-bottom:20px; top:50px !important;}
 	button.toggle-data-cvmg {display:block;}
 }
 @media (min-width:631px) and (max-width:875px) {
@@ -292,7 +292,7 @@ aside.skills ul li div.bar-progress-skill-10:before {float:left; content:" "; vi
 }
 
 
-button.toggle-skills-cvmg {transform:rotate(90deg); position:fixed; width:150px; z-index:10; left:-64px; padding:2px; bottom:280px; background-color:#02be6e; border:none; border-radius:0px 7px 0px 7px; color:#fdfdfe; display:none;}
+button.toggle-skills-cvmg {transform:rotate(90deg); position:fixed; width:150px; z-index:10; left:-64px; padding:2px; bottom:280px; background-color:#17202a; border:none; border-radius:0px 7px 0px 7px; color:#fdfdfe; display:none;}
 
 .effect-show-skills {transform:translateX(0px) !important; transition:0.5s !important;}
 .effect-hide-skills {transform:translateX(-130%) !important; transition:0.5s !important;}
