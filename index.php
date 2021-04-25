@@ -140,7 +140,7 @@
 				<ul>
 					<li>
 						<label class="time">01/2020 - 07/2022</label>
-						<label class="course">Bacharelado em Anásile e Desenvolvimento de Sistemas (3º periodo)</label><br>
+						<label class="course">Bacharelado em Análise e Desenvolvimento de Sistemas (3º periodo)</label><br>
 						<label class="locale">Estácio - Natal/RN</label>
 					</li>
 					<li>
