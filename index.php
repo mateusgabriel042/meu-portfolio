@@ -145,7 +145,7 @@
 					</li>
 					<li>
 						<label class="time">02/2014 - 11/2019</label>
-						<label class="course">Técnico em informática (concluído)</label><br>
+						<label class="course">Técnico em Informática (concluído)</label><br>
 						<label class="locale">IFRN - Campus Macau</label>
 					</li>
 				</ul>
