@@ -161,9 +161,8 @@ main section.abstract a:hover {background-color:#0063e8; transition:0.3s;}
 main section.portfolio div.projects {float:left; width:100%; display:flex; flex-wrap:wrap; align-content:flex-start; justify-content:center;}
 main section.portfolio div.projects div.container {float:left; width:42%; margin:0px 17px; margin-bottom:25px; box-shadow:0px 6px 15px 0px rgba(0,0,0,0.1); border-radius:7px; padding:25px 0px; display:flex; flex-wrap:wrap; justify-content:center; align-content:flex-start;}
 main section.portfolio div.projects div.container div.box-img {float:left; width:80%; height:160px; margin-bottom:15px; background-repeat:no-repeat; background-size:cover; background-position:center; border:1px solid #e8e8e8;}
-main section.portfolio div.projects div.container:nth-child(1) div.box-img {background-image:url('../img/portfolio-1.png');}
-main section.portfolio div.projects div.container:nth-child(2) div.box-img {background-image:url('../img/img-default.png');}
-main section.portfolio div.projects div.container:nth-child(3) div.box-img {background-image:url('../img/img-default.png');}
+main section.portfolio div.projects div.container:nth-child(1) div.box-img {background-image:url('../img/portfolio/system-sssystem-1.png');}
+main section.portfolio div.projects div.container:nth-child(2) div.box-img {background-image:url('../img/portfolio/system-eassit-1.png');}
 main section.portfolio div.projects div.container div.box-info {width:80%;}
 main section.portfolio div.projects div.container div.box-info h5 {float:left; width:100%; margin-bottom:8px; color:#666666;}
 main section.portfolio div.projects div.container div.box-info p.about-project {float:left; width:100%; color:#999999; text-align:justify; font-size:13px; margin-bottom:8px;}
