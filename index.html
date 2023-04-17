@@ -5,14 +5,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/js/splide-4.1.3/dist/css/splide.min.css">
 		<link rel="stylesheet" href="assets/css/style.css">
+		<style>
+			
+		</style>
+
 	</head>
 
 	<body>
 		<aside class="data-mg" id="data-mg">
 			<div class="content-data-mg">
-				<h1>Mateus Gabriel</h1>
-				<label>Desenvolvedor web Full Stack</label>
 				<div class="area-photo">
 					<img src="assets/img/photo-mg.jpg" alt="Mateus Gabriel" />
 				</div>
@@ -25,7 +28,7 @@
 			
 				<h2>Dados pessoais</h2>
 				<ul>
-					<li><i class="fa">&#xf1fd;</i>  23 anos</li>
+					<li><i class="fa">&#xf1fd;</i>  24 anos</li>
 					<li><i class="fa">&#xf124;</i>  Natal/RN</li>
 					<li><i class="fa">&#xf183;</i>  Solteiro</li>
 					<li><i class="fa">&#xf095;</i>  (84) 99993 - 2183</li>
@@ -41,80 +44,306 @@
 		</aside>
 		<button type="button" class="toggle-data-cvmg" id="toggle-data-cvmg">Dados pessoais</button>
 
-		<nav id="nav-cv">
-			<ul>
-				<li id="btn-abstract">Resumo</li>
-				<li id="btn-portfolio">Portifólio</li>
-				<li id="btn-experience">Experiências</li>
-				<li id="btn-formation">Formação</li>
-				<li id="btn-premiations">Premiações</li>
-				<li id="btn-activities">Outras atividades</li>
-			</ul>
-		</nav>
-		<button type="button" class="toggle-nav" id="btn-toogle-nav"><i class="fa">&#xf0c9;</i></button>
-
 		<main>
-			<section class="abstract" id="abstract">
-				<h2>Resumo</h2>
+			<nav id="nav-cv">
+				<ul>
+					<li class="btn-nav active" id="btn-about">Sobre</li>
+					<li class="btn-nav" id="btn-portfolio">Portifólio</li>
+					<li class="btn-nav" id="btn-skills">Habilidades</li>
+					<li class="btn-nav" id="btn-experience">Experiências</li>
+					<li class="btn-nav" id="btn-formation">Formação</li>
+					<li class="btn-nav" id="btn-certificate">Certificados</li>
+				</ul>
+			</nav>
+			<button type="button" class="toggle-nav" id="btn-toogle-nav"><i class="fa">&#xf0c9;</i></button>
+
+			<header id="header">
+				<div class="area-left">
+					<img src="assets/img/img-man.png" alt="">
+					<div>
+						<label>Oi, sou o</label>
+						<h1>Mateus Gabriel</h1>
+						<span>{ Desenvolvedor Full Stack pleno }</span>
+					</div>
+				</div>
+				<div class="area-right">
+					<img src="assets/img/logos/logo_main_white_sm.png" alt="" />
+				</div>
+			</header>
+
+		
+			<section class="about" id="about">
+				<h2>Sobre mim</h2>
 				<article>
-					<p>Sou desenvolvedor full stack pleno, trabalho há 5 anos com PHP e Javascript desenvolvendo sistemas web e APIs RESTful. já trabalhei na confecção de mais de 7 projetos administrativos e distribuídos com arquitetura Multi Tenancy.</p>
+					<p>
+						Sou um desenvolvedor full stack pleno com experiência no desenvolvimento de sistemas web em PHP,
+						React e Next, bem como no manuseio de sistemas já em produção. Tenho formação em Análise e
+						Desenvolvimento de Sistemas pela Estácio e em Técnico em Informática pelo IFRN Campus Macau,
+						e atuei como instrutor de POO durante minha bolsa TAL no IFRN.
+					</p>
 				</article>
 				<a target="_blank" href="https://docs.google.com/document/d/1o_ccDMUHTmElE-KDThLiSL_uiqIRZBI1dxdcGbMMyDQ/edit?usp=sharing">Currículo</a>
 				<a target="_blank" href="https://www.linkedin.com/in/mateus-gabriel-a64885144/">Linkedin</a>
 			</section>
 
-
-			<section class="portfolio" id="portfolio">
+			
+			<section class="splide portfolio" id="portfolio">
 				<h2>Portifólio</h2>
-				<div class="projects">
-					
-					<div class="container">
-						<div class="box-img"></div>
+				<div class="splide__track">
+					<ul class="splide__list">
+						<li class="splide__slide portfolio-1">
+							<img src="assets/img/portfolio/sssystem.png" alt="" />
+							
+							<div class="box-desc-project">
+								<div class="background-box-desc-project"></div>
+								<div class="text-desc-project">
+									<h1>SSSystem</h1>
+									<p>
+										Um software de gerenciamento de vendas e estoque voltado para lojas varejistas.
+										O sistema apresenta diversas funcionalidades, incluindo o cadastro de produtos e lojas,
+										controle de estoque, prospecção de clientes e solicitação de produtos entre lojas.
+										Também foi criado um painel de totem para listagem dos produtos, como promoções e horários de funcionamento,
+										com o objetivo de melhorar a experiência do cliente e aumentar as vendas das lojas.
+									</p>
 
-						<div class="box-info">
-							<h5>Sistema SSSystem</h5>
-							<p class="about-project">Um sistema de gerenciamento de lojas, totens, estoques e solicitações de atacado e varejo.</p>
-							<p class="tools-project">PHP - Laravel - HTML5 - CSS3 - Javascript - React - MySQL</p>
-							<div class="links">
-								<!--<a target="_blank" href="https://www.behance.net/gallery/113799137/Site-MGSCRIPT"><i class="fa">&#xf1b4;</i> Behance</a>-->
+									<a href="https://www.behance.net/gallery/168486877/SSSystem" target="_blank">Analisar</a>
+								</div>
+								<ul class="list-techs">
+									<li><img src="assets/img/skills/html5.png" alt="" /></li>
+									<li><img src="assets/img/skills/css3.png" alt="" /></li>
+									<li><img src="assets/img/skills/bootstrap.png" alt="" /></li>
+									<li><img src="assets/img/skills/php8.png" style="height: 10px;" alt="" /></li>
+									<li><img src="assets/img/skills/laravel.png" alt="" /></li>
+									<li><img src="assets/img/skills/mysql.png" style="height: 14px;" alt="" /></li>
+									<li><img src="assets/img/skills/react.png" alt="" /></li>
+									<li><img src="assets/img/skills/git.png" alt="" /></li>
+								</ul>
 							</div>
-						</div>
-					</div>
+						</li>
 
-					<div class="container">
-						<div class="box-img"></div>
+						<li class="splide__slide portfolio-2">
+							<img src="assets/img/portfolio/cawptech_properties.png" alt="" />
+							<div class="box-desc-project">
+								<div class="background-box-desc-project"></div>
+								<div class="text-desc-project">
+									<h1>CAWPTech properties</h1>
+									<p>
+										O sistema proposto é um website para alugar e vender diversos tipos de itens,
+										com funcionalidades como busca por filtros, cadastro de itens com informações
+										e fotos, e um painel de controle para gerenciamento de transações e interação
+										com clientes. Com um design moderno e intuitivo, o sistema oferece uma
+										solução prática e confiável para quem busca alugar ou vender itens de maneira eficiente.
+									</p>
 
-						<div class="box-info">
-							<h5>Sistema Easit</h5>
-							<p class="about-project">Um sistema de para assistencia social com gerenciamento de familías, denúncias e ocorrências.</p>
-							<p class="tools-project">PHP - Laravel - HTML5 - CSS3 - Javascript - React - MySQL</p>
-							<div class="links">
-								<!--<a target="_blank" href="https://www.behance.net/gallery/113799137/Site-MGSCRIPT"><i class="fa">&#xf1b4;</i> Behance</a>-->
+									<a href="https://www.behance.net/gallery/168529611/CAWPTech-Properties" target="_blank">Analisar</a>
+								</div>
+								<ul class="list-techs">
+									<li><img src="assets/img/skills/html5.png" alt="" /></li>
+									<li><img src="assets/img/skills/css3.png" alt="" /></li>
+									<li><img src="assets/img/skills/bootstrap.png" alt="" /></li>
+									<li><img src="assets/img/skills/php8.png" style="height: 10px;" alt="" /></li>
+									<li><img src="assets/img/skills/laravel.png" alt="" /></li>
+									<li><img src="assets/img/skills/mysql.png" style="height: 14px;" alt="" /></li>
+									<li><img src="assets/img/skills/react.png" alt="" /></li>
+									<li><img src="assets/img/skills/nextjs.png" style="height: 12px;" alt="" /></li>
+									<li><img src="assets/img/skills/git.png" alt="" /></li>
+								</ul>
 							</div>
-						</div>
-					</div>
-
+						</li>
+					</ul>
 				</div>
+			</section>
+
+			<section class="skills" id="skills">
+				<h2>Habilidades</h2>
+
+				<div class="area-skills">
+					<ul class="lines">
+					  
+					  <li class="line l--25">
+						<span class="line__label">
+							Básico
+						</span>
+					  </li>
+					  <li class="line l--50">
+						<span class="line__label">
+							Intermediário
+						</span>
+					  </li>
+					  <li class="line l--75">
+						<span class="line__label">
+							Avançado
+						</span>
+					  </li>
+					  <li class="line l--100">
+						<span class="line__label">
+							Especialista
+						</span>
+					  </li>
+					</ul>
+					
+					<div class="charts">
+					  <div class="chart chart--dev">
+						<span class="chart__title">Development</span>
+						<ul class="chart--horiz">
+						  <li class="chart__bar" style="width: 100%;">
+							<img class="img__skills" src="assets/img/skills/html5.png" alt="html5" title="html5" />
+							<span class="chart__label">
+							  HTML5
+							</span>
+						  </li>
+						  <li class="chart__bar" style="width: 100%;">
+							<img class="img__skills" src="assets/img/skills/css3.png" alt="html5" title="html5" />
+							<span class="chart__label">
+							  CSS3 / SCSS
+							</span>
+						  </li>
+						  <li class="chart__bar" style="width: 85%;">
+							<img class="img__skills" src="assets/img/skills/nodejs.png" alt="html5" title="html5" />
+							<span class="chart__label">
+							  JavaScript
+							</span>
+						  </li>
+						  <li class="chart__bar" style="width: 85%;">
+							<img class="img__skills img__php" src="assets/img/skills/php8.png" alt="html5" title="html5" />
+							<span class="chart__label">
+							  PHP8
+							</span>
+						  </li>
+						  <li class="chart__bar" style="width: 80%;">
+							<img class="img__skills" src="assets/img/skills/laravel.png" alt="html5" title="html5" />
+							<span class="chart__label">
+							  Laravel
+							</span>
+						  </li>
+						  <li class="chart__bar" style="width: 50%;">
+							<img class="img__skills" src="assets/img/skills/nodejs.png" alt="html5" title="html5" />
+							<span class="chart__label">
+							  NodeJS
+							</span>
+						  </li>
+						  <li class="chart__bar" style="width: 70%;">
+							<img class="img__skills" src="assets/img/skills/react.png" alt="html5" title="html5" />
+							<span class="chart__label">
+							  ReactJS
+							</span>
+						  </li>
+						  <li class="chart__bar" style="width: 80%;">
+							<img class="img__skills img__next" src="assets/img/skills/nextjs.png" alt="html5" title="html5" />
+							<span class="chart__label">
+							  NextJS
+							</span>
+						  </li>
+						  <li class="chart__bar" style="width: 80%;">
+							<img class="img__skills img__vue" src="assets/img/skills/vue.png" alt="vue" title="VueJS" />
+							<span class="chart__label">
+							  VueJS
+							</span>
+						  </li>
+						  <li class="chart__bar" style="width: 100%;">
+							<img class="img__skills" src="assets/img/skills/jquery.png" alt="html5" title="html5" />
+							<span class="chart__label">
+							  jQuery
+							</span>
+						  </li>
+						  
+						  <li class="chart__bar" style="width: 100%;">
+							<img class="img__skills" src="assets/img/skills/bootstrap.png" alt="html5" title="html5" />
+							<span class="chart__label">
+							  Bootstrap
+							</span>
+						  </li>
+						  <li class="chart__bar" style="width: 90%;">
+							<img class="img__skills" src="assets/img/skills/materialize.png" alt="html5" title="html5" />
+							<span class="chart__label">
+							  Materialize
+							</span>
+						  </li>
+						  <li class="chart__bar" style="width: 50%;">
+							<img class="img__skills img__express" src="assets/img/skills/express.png" alt="express" title="express" />
+							<span class="chart__label">
+							  Express
+							</span>
+						  </li>
+						  
+						  <li class="chart__bar" style="width: 85%;">
+							<img class="img__skills" src="assets/img/skills/mysql.png" alt="html5" title="html5" />
+							<span class="chart__label">
+							  MySQL
+							</span>
+						  </li>
+						  <li class="chart__bar" style="width: 70%;">
+							<img class="img__skills" src="assets/img/skills/postgreesql.png" alt="html5" title="html5" />
+							<span class="chart__label">
+							  PostgreeSQL
+							</span>
+						  </li>						  
+						</ul>
+					  </div>
+					  
+					<div class="chart chart--prod">
+						<span class="chart__title">Productivity</span>
+						<ul class="chart--horiz">
+							<li class="chart__bar" style="width: 80%;">
+								<img class="img__skills" src="assets/img/skills/git.png" alt="html5" title="html5" />
+								<span class="chart__label">
+									Git + Github, Bitbucket e Sourcetree
+								</span>
+							</li>
+							<li class="chart__bar" style="width: 50%;">
+								<img class="img__skills" src="assets/img/skills/docker.png" alt="html5" title="html5" />
+								<span class="chart__label">
+									Docker
+								</span>
+							</li>
+						</ul>
+					</div>
+					  
+					<div class="chart chart--design">
+						<span class="chart__title">Design</span>
+						<ul class="chart--horiz">
+						
+						<li class="chart__bar" style="width: 100%;">
+							<img class="img__skills" src="assets/img/skills/coreldraw.png" alt="html5" title="html5" />
+							<span class="chart__label">
+							CorelDraw x8
+						  </span>
+						</li>
+						<li class="chart__bar" style="width: 90%;">
+							<img class="img__skills" src="assets/img/skills/figma.png" alt="html5" title="html5" />
+							<span class="chart__label">
+							Figma
+						  </span>
+						</li>
+					  </ul>
+					  </div>
+					</div>
+				  </div>
 			</section>
 
 			<section class="experience" id="experience">
 				<h2>Experiências</h2>
 				<ul>
 					<li>
-						<label class="time">10/2021 - atualmente</label>
-						<label class="position-company">Desenvolvedor web full stack - IETÉ</label><br>
-						<label class="lb-tasks">Tarefas:</label>
-						<p class="info-tasks">Trabalho no desenvolvimento de sistemas comerciais com as tecnologias: PHP, Laravel, React e Vue.</p>
+						<span class="icon-experience"><i class="fa">&#xf121;</i></span>
+						<label class="time"><i class="fa">&#xf073;</i>10/2021 até o presente</label>
+						<label class="company"><i class="fa">&#xf275;</i>IETÉ</label>
+						<label class="role"><i class="fa">&#xf0b1;</i>Desenvolvedor web full stack</label>
+						<label class="lb-tasks"><i class="fa">&#xf11c;</i>Responsabilidades:</label>
+						<p class="info-tasks">- Desenvolvimento de sistemas web em PHP e React;</p>
+						<p class="info-tasks">- Modelagem e desenvolvimento de frontend de aplicações web.</p>
 					</li>
 
 					<li>
-						<label class="time">03/2019 - 09/2019</label>
-						<label class="position-company">Desenvolvedor web full stack - A & L Informática</label><br>
-						<label class="lb-tasks">Tarefas:</label>
-						<p class="info-tasks">Trabalhei na criação de websites e aplicações web utilizando as tecnologias: PHP, Laravel e Javascript.</p>
+						<span class="icon-experience"><i class="fa">&#xf121;</i></span>
+						<label class="time"><i class="fa">&#xf073;</i>03/2019 até 09/2019</label>
+						<label class="company"><i class="fa">&#xf275;</i>A & L Informática</label>
+						<label class="role"><i class="fa">&#xf0b1;</i>Desenvolvedor web full stack</label>
+						<label class="lb-tasks"><i class="fa">&#xf11c;</i>Responsabilidades:</label>
+						<p class="info-tasks">- Desenvolvimento de website institucional da empresa;</p>
+						<p class="info-tasks">- Desenvolvimento de sistema administrativo da empresa.</p>
 					</li>
 					
-					<!--<label class="not-item">Em busca do primeiro emprego.</label>-->
 				</ul>
 			</section>
 
@@ -122,137 +351,73 @@
 				<h2>Formação</h2>
 				<ul>
 					<li>
-						<label class="time">01/2020 - 07/2022</label>
-						<label class="course">Graduação em Análise e Desenvolvimento de Sistemas (concluído)</label><br>
-						<label class="locale">Estácio - Natal/RN</label>
+						<label class="time"><i class="fa">&#xf073;</i>01/2020 - 07/2022</label>
+						<label class="course"><i class="fa">&#xf19d;</i>Graduação em Análise e Desenvolvimento de Sistemas (concluído)</label><br>
+						<label class="locale"><i class="fa">&#xf041;</i>Estácio - Natal/RN</label>
 					</li>
 					<li>
-						<label class="time">02/2014 - 11/2019</label>
-						<label class="course">Técnico em Informática (concluído)</label><br>
-						<label class="locale">IFRN - Campus Macau</label>
+						<label class="time"><i class="fa">&#xf073;</i>02/2014 - 11/2019</label>
+						<label class="course"><i class="fa">&#xf19d;</i>Técnico em Informática (concluído)</label><br>
+						<label class="locale"><i class="fa">&#xf041;</i>IFRN - Campus Macau</label>
 					</li>
 				</ul>
 			</section>
 
-			<section class="premiations" id="premiations">
-				<h2>Premiações</h2>
+			<section class="splide certificates" id="certificates">
+				<h2>Certificados</h2>
+				<div class="splide__track">
+					<ul class="splide__list">
+						<li class="splide__slide certificate-1"><img src="assets/img/certificates/estacio_ads_graduacao.png" alt=""></li>
+						<li class="splide__slide certificate-2"><img src="assets/img/certificates/iv_conedu.png" alt=""></li>
+						<li class="splide__slide certificate-3"><img src="assets/img/certificates/iv_secitex_ifrn.png" alt=""></li>
+						<li class="splide__slide certificate-4"><img src="assets/img/certificates/iv_semana_de_ciencia_e_tecnologia_ifrn_parnamirim.png" alt=""></li>
+						<li class="splide__slide certificate-5"><img src="assets/img/certificates/vi_expotec_ifrn.png" alt=""></li>
+						<li class="splide__slide certificate-6"><img src="assets/img/certificates/xi_connepi_ifal.png" alt=""></li>
+						<li class="splide__slide certificate-7"><img src="assets/img/certificates/udemy_inglês.jpg" alt=""></li>
+						<li class="splide__slide certificate-8"><img src="assets/img/certificates/udemy_nextjs_e_react.jpg" alt=""></li>
+						<li class="splide__slide certificate-9"><img src="assets/img/certificates/udemy_wordpress.jpg" alt=""></li>
+						
+					</ul>
+				</div>
+			</section>
+
+			<footer>
 				<ul>
 					<li>
-						<label class="colocation">2º lugar</label>
-						<label class="event">Encontro de Tecnologia de Parnamirim</label><br>
-						<label class="locale">IFRN - Campus Parnamirim</label>
+						<span></span>
+						<img src="assets/img/logos/logo_main_white_sm.png" alt="">
 					</li>
 
 					<li>
-						<label class="colocation">3º lugar</label>
-						<label class="event">1ª Olimpieda de Programação do IFRN Campus Macau</label><br>
-						<label class="locale">IFRN - Campus Macau</label>
+						<a href="#"><label><i class="fa">&#xf09a;</i> cawptech</label></a>
+					</li>
+
+					<li>
+						<a href="#"><label><i class="fa">&#xf232;</i>+55 84 99993-2183</label></a>
+					</li>
+
+					<li>
+						<a href="#"><label><i class="fa">&#xf003;</i>mateus.gabriel042@gmail.com</label></a>
 					</li>
 				</ul>
-			</section>
-
-
-			<section class="activities" id="activities">
-				<h2>Atividades Extracurriculares</h2>
-				<ul>
-					<li>
-						<label class="time">05/2017 - 12/2017</label>
-						<label class="event">Monitoria de POO - 70h</label><br>
-						<label class="locale">IFRN Campus Macau</label>
-					</li>
-
-					<li>
-						<label class="time">11/2017 - 11/2017</label>
-						<label class="event">IV CONEDU - 40h</label><br>
-						<label class="locale">João Pessoa/PB</label>
-					</li>
-
-					<li>
-						<label class="time">12/2016 - 12/2016</label>
-						<label class="event">XI CONNEPI - 40h</label><br>
-						<label class="locale">Maceió/AL</label>
-					</li>
-				</ul>
-			</section>
+			</footer>
 		</main>
 
-		<aside class="skills" id="skills">
-			<div class="content">
-				<h2>Habilidades</h2>
-
-				<ul>
-					<li>
-						<span>PHP</span>
-						<div class="bar-progress-skill-9"></div>
-					</li>
-					<li>
-						<span>Laravel</span>
-						<div class="bar-progress-skill-9"></div>
-					</li>
-					<li>
-						<span>Wordpress</span>
-						<div class="bar-progress-skill-5"></div>
-					</li>
-					<li>
-						<span>HTML/CSS</span>
-						<div class="bar-progress-skill-10"></div>
-					</li>
-					<li>
-						<span>Javascript (ECMAScript 6)</span>
-						<div class="bar-progress-skill-10"></div>
-					</li>
-					
-					<li>
-						<span>Next.js</span>
-						<div class="bar-progress-skill-7"></div>
-					</li>
-					<li>
-						<span>React.js</span>
-						<div class="bar-progress-skill-7"></div>
-					</li>
-					<li>
-						<span>Vue.js</span>
-						<div class="bar-progress-skill-7"></div>
-					</li>
-					<li>
-						<span>Bootstrap 5</span>
-						<div class="bar-progress-skill-10"></div>
-					</li>
-					
-					<li>
-						<span>MySQL</span>
-						<div class="bar-progress-skill-10"></div>
-					</li>
-					
-					<li>
-						<span>Sass</span>
-						<div class="bar-progress-skill-10"></div>
-					</li>
-					<li>
-						<span>Jquery</span>
-						<div class="bar-progress-skill-10"></div>
-					</li>
-
-					<li>
-						<span>Docker</span>
-						<div class="bar-progress-skill-6"></div>
-					</li>
-
-					<li>
-						<span>Git</span>
-						<div class="bar-progress-skill-9"></div>
-					</li>
-
-					<li>
-						<span>API RESTful</span>
-						<div class="bar-progress-skill-9"></div>
-					</li>
-				</ul>
-			</div>
-		</aside>
-		<button type="button" class="toggle-skills-cvmg" id="toggle-skills-cvmg">Habilidades</button>
-
 		<script type="text/javascript" src="assets/js/jquery-3.2.0.min.js"></script>
+		<script src="assets/js/splide-4.1.3/dist/js/splide.min.js"></script>
+		<script>
+			let slidePortfolio = new Splide( '#portfolio', {
+				type   : 'loop',
+				padding: 'calc(17% - 30px)',
+			});
+			slidePortfolio.mount();
+
+			let slideCertificates = new Splide( '#certificates', {
+				type   : 'loop',
+				padding: 'calc(25% - 30px)',
+			});
+			slideCertificates.mount();
+		</script>
 		<script src="assets/js/particles.min.js"></script>
 		<script type="text/javascript" src="assets/js/script.js"></script>
 	</body>

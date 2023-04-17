@@ -1,52 +1,100 @@
-$(document).ready(function(){
-	function closeNavByClickingItemMobile(){
-		if($("#nav-cv ul").css("display") != "none" && $(window).width() <= 640)
-			$("#nav-cv ul").css({"display":"none"});
+
+function changeBtnNav(id){
+	let elementActived = document.getElementsByClassName('active');
+	if(id != elementActived[0].id){
+		elementActived[0].classList.remove('active');
+		document.getElementById(id).classList.add('active');
+	}
+}
+$(window).scroll(function (event) {
+	if($(window).scrollTop() <= 30){//caso o topo barra de navegacao seja menor do que 30px remove o background
+		if($("#nav-cv").hasClass('nav-white'))
+			$("#nav-cv").removeClass('nav-white');
+		
+	}else{
+		if(!$("#nav-cv").hasClass('nav-white'))
+			$("#nav-cv").addClass('nav-white');
 	}
 
+	if($(window).scrollTop() > $('#about').scrollTop() + 150 && $(window).scrollTop() < $('#portfolio').scrollTop() + 500){
+		if(!$("#about").hasClass('show-about'))
+			$("#about").addClass('show-about');
+		changeBtnNav('btn-about')
+	}
 
-	$("#btn-abstract").click(function(){
-		$('html, body').animate({scrollTop: $("#abstract").offset().top-100}, 500);
-		closeNavByClickingItemMobile();
+	if($(window).scrollTop() > $('#portfolio').scrollTop() + 500 && $(window).scrollTop() < $('#skills').scrollTop() + 1000){
+		if(!$("#portfolio").hasClass('show-portfolio'))
+			$("#portfolio").addClass('show-portfolio');
+		changeBtnNav('btn-portfolio')
+	}
+
+	if($(window).scrollTop() > $('#skills').scrollTop() + 1000 && $(window).scrollTop() < $('#experience').scrollTop() + 1900){
+		$('.chart__title').css({'display':'block'});
+		$('.chart__bar').css({'display':'flex'});
+		changeBtnNav('btn-skills')
+	}
+
+	if($(window).scrollTop() > $('#experience').scrollTop() + 1900 && $(window).scrollTop() < $('#formation').scrollTop() + 2300){
+		if(!$("#experience").hasClass('show-experience'))
+			$("#experience").addClass('show-experience');
+		changeBtnNav('btn-experience')
+	}
+
+	if($(window).scrollTop() > $('#formation').scrollTop() + 2300 && $(window).scrollTop() < $('#certificates').scrollTop() + 2600){
+		if(!$("#formation").hasClass('show-formation'))
+			$("#formation").addClass('show-formation');
+		changeBtnNav('btn-formation')
+	}
+
+	if($(window).scrollTop() > $('#certificates').scrollTop() + 2600){
+		if(!$("#certificates").hasClass('show-certificates'))
+			$("#certificates").addClass('show-certificates');
+		changeBtnNav('btn-certificate')
+	}
+
+	
+});
+$(document).ready(function(){
+	/*function closeNavByClickingItemMobile(){
+		if($("#nav-cv ul").css("display") != "none" && $(window).width() <= 640)
+			$("#nav-cv ul").css({"display":"none"});
+	}*/
+
+	
+
+	$("#btn-about").click(function(){
+		$('html, body').animate({scrollTop: $('#about').offset().top - 200}, 500);
+		//closeNavByClickingItemMobile();
 	});
 
 	$("#btn-portfolio").click(function(){
-		$('html, body').animate({scrollTop: $("#portfolio").offset().top-100}, 500);
-		closeNavByClickingItemMobile();
+		$('html, body').animate({scrollTop: $('#portfolio').offset().top - 120}, 500);
+		//closeNavByClickingItemMobile();
+	});
+
+	$("#btn-skills").click(function(){
+		$('html, body').animate({scrollTop: $('#skills').offset().top - 50}, 500);
+		//closeNavByClickingItemMobile();
 	});
 
 	$("#btn-experience").click(function(){
-		$('html, body').animate({scrollTop: $("#experience").offset().top-100}, 500);
-		closeNavByClickingItemMobile();
+		$('html, body').animate({scrollTop: $('#experience').offset().top - 250}, 500);
+		//closeNavByClickingItemMobile();
 	});
 
 	$("#btn-formation").click(function(){
-		$('html, body').animate({scrollTop: $("#formation").offset().top-100}, 500);
-		closeNavByClickingItemMobile();
+		$('html, body').animate({scrollTop: $('#formation').offset().top - 340}, 500);
+		//closeNavByClickingItemMobile();
 	});
 
-	$("#btn-premiations").click(function(){
-		$('html, body').animate({scrollTop: $("#premiations").offset().top-100}, 500);
-		closeNavByClickingItemMobile();
+	$("#btn-certificate").click(function(){
+		$('html, body').animate({scrollTop: $('#certificates').offset().top  - 150}, 500);
+		//closeNavByClickingItemMobile();
 	});
-
-	$("#btn-activities").click(function(){
-		$('html, body').animate({scrollTop: $("#activities").offset().top-100}, 500);
-		closeNavByClickingItemMobile();
-	});
+	
 
 	$("#btn-toogle-nav").click(function(){
 		$("#nav-cv ul").toggle(500);
-	});
-
-	$("#toggle-skills-cvmg").click(function(){
-		if(!$("#skills").hasClass("effect-show-skills")){
-			$("#skills").addClass("effect-show-skills");
-			$("#skills").removeClass("effect-hide-skills");
-		}else{
-			$("#skills").addClass("effect-hide-skills");
-			$("#skills").removeClass("effect-show-skills");
-		}
 	});
 
 	$("#toggle-data-cvmg").click(function(){
@@ -62,11 +110,11 @@ $(document).ready(function(){
 
 });
 
-particlesJS("data-mg",
+particlesJS("header",
 		{
 			"particles": {
 				"number":{
-					"value":80,"density":{
+					"value":40,"density":{
 						"enable":true,"value_area":800
 					}
 				},
