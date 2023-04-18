@@ -36,9 +36,9 @@ input {outline:none;}
 ::-webkit-scrollbar-thumb {background-color:#222629;}
 
 
-aside.data-mg {position:fixed; left:0px; width:20%; height:100%; z-index:10; background-color:#222629;}
-aside.data-mg .content-data-mg {position:absolute; width:80%; margin-left:10%; margin-top:20px; display:flex; justify-content:center; flex-wrap:wrap;}
-aside.data-mg .content-data-mg div.area-photo {float:left; margin-top:15px; width:150px; height:150px; border-radius:100%; overflow:hidden; border:3px solid #ffffff; display: flex; align-items: center; align-content:center;}
+aside.data-mg {position:fixed; left:0px; top:0px; width:20%; height:100%; z-index:101; background-color:#222629;}
+aside.data-mg .content-data-mg {position:absolute; height:100vh; width:80%; margin-left:10%; margin-top:20px; display:flex; justify-content:center; flex-wrap:wrap;}
+aside.data-mg .content-data-mg div.area-photo {margin-top:15px; width:150px; height:150px; border-radius:100%; overflow:hidden; border:3px solid #ffffff; display: flex; align-items: center; align-content:center;}
 aside.data-mg .content-data-mg div.area-photo img {width:100%;}
 aside.data-mg .content-data-mg div.redes-sociais {float:left; width:100%; margin-top:40px; margin-bottom:10px; display:flex; justify-content:center;}
 aside.data-mg .content-data-mg div.redes-sociais a {float:left; margin:0px; background-color:#ffffff; color:#222629; width:25px; height:25px; display:flex; justify-content:center; align-items:center; align-content:center; transition:all 0.3s;}
@@ -56,24 +56,22 @@ button.toggle-data-cvmg {transform:rotate(90deg); position:fixed; width:150px; z
 .effect-hide-data-mg {transform:translateX(-130%) !important; transition:0.5s !important;}
 
 @media (min-width:0px) and (max-width:440px) {
-	aside.data-mg {position:fixed; transform:translateX(-130%); width:100%; height:100%; z-index:6; overflow-y:auto; padding-bottom:20px; top:0px !important;}
+	aside.data-mg {width:100%; overflow-y:auto; transform:translateX(-100%); padding-bottom:20px; top:0px !important;}
 	aside.data-mg .content-data-mg {padding-bottom:20px; align-content:flex-start; align-items:flex-start;}
 	button.toggle-data-cvmg {display:block;}
 }
 @media (min-width:441px) and (max-width:630px) {
-	aside.data-mg {transform:translateX(-130%); position:absolute; height:100em; width:100%; padding-bottom:20px; top:50px !important;}
+	aside.data-mg {width:100%; transform:translateX(-100%); padding-bottom:20px; left:0px; top:0px !important; overflow-y:auto;}
 	button.toggle-data-cvmg {display:block;}
 }
 @media (min-width:631px) and (max-width:875px) {
-	aside.data-mg {transform:translateX(-130%); position:absolute; height:100em; width:40%; padding-bottom:20px; top:50px !important;}
+	aside.data-mg {width:35%; transform:translateX(-100%); padding-bottom:20px; top:0px !important;}
 	button.toggle-data-cvmg {display:block;}
 }
 @media (min-width:876px) and (max-width:1100px) {
-	aside.data-mg {transform:translateX(-130%); width:25%; top:50px;}
+	aside.data-mg {width:25%;}
 	button.toggle-data-cvmg {display:block;}
 }
-
-
 
 
 
@@ -111,6 +109,7 @@ nav ul li:hover:before, nav ul li:focus:before, nav ul li:active:before {
 	-webkit-transform: scaleX(1);
 	transform: scaleX(1);
 }
+nav ul li.btn-nav-close {background-color:#e64548; display:none;}
 .active {
 	background-color:#222629 !important;
 	transition:0.3s;
@@ -127,30 +126,25 @@ nav ul li:hover:before, nav ul li:focus:before, nav ul li:active:before {
 .nav-white ul li:not(.active):hover {color: #ffffff;}
 
 /*nav ul li:hover {background-color:#029c5a; color:#fdfdfe; transition:0.3s; background-size:100%;}*/
-button.toggle-nav {position:fixed; z-index:5; right:9%; top:10px; border:none; border:none; color:#fdfdfe; font-size:20px; background-color:transparent; display:none; }
-button.toggle-nav i {transform:translateY(-1px);}
+button.toggle-nav {position:fixed; width:40px; height:40px; z-index:5; right:20px; top:25px; border:none; border:none; color:#fdfdfe; font-size:20px; background-color:#222629; border-radius:100%; display:none; }
+button.toggle-nav i {}
 
-@media (min-width:0px) and (max-width:640px) {
-	nav {width:100%; min-height:50px;}
-	nav ul {width:80%; margin-left:10%; flex-direction:column; display:none; padding:0px;}
-	nav ul li {width:95%; padding:10px 15px;}
-	button.toggle-nav {display:block;}
+@media (min-width:0px) and (max-width:875px) {
+	nav {width:100%; z-index:102;}
+	nav ul {width:100%; flex-wrap: wrap; padding:0px; display:none;}
+	nav ul li {width:100%; background-color:#c3c2c2; border-bottom:1px solid #999999; padding:20px; text-align: center; margin-bottom:-1px;}
+	nav ul li.btn-nav-close {display:block;}
+	button.toggle-nav {display: block;}
 }
 
-@media (min-width:641px) and (max-width:855px) {
-	nav {width:100%;}
-	nav ul {width:100%; padding:0px 20px;}
-	nav ul li {padding:20px 10px;}
-}
-
-@media (min-width:856px) and (max-width:1100px) {
-	nav {width:100%;}
+@media (min-width:876px) and (max-width:990px) {
+	nav ul li {padding:10px; padding-top:20px; font-size:14px;}
 }
 
 
 
 
-header {position: relative; float:left; width:100%; height:100vh; display:flex; align-items:center;
+header {position: relative; top:0px; right:0px; float:left; width:100%; height:100vh; display:flex; align-items:center;
 	align-content:center;
 	justify-content:space-between;
 	padding:0px 10%;
@@ -158,7 +152,6 @@ header {position: relative; float:left; width:100%; height:100vh; display:flex; 
 	background: linear-gradient(-45deg, #e9c46a, #e76f51, #e64548, #e1301d);
 	background-size: 400% 400%;
 	animation: gradient 10s ease infinite;
-	height: 100vh;
 }
 header div.area-left {position:absolute; display:flex; align-items:flex-end; align-content:flex-end;}
 header div.area-left img {margin-right:15px; width:50px;}
@@ -166,7 +159,23 @@ header div.area-left label {color:#ffffff; font-size:20px;}
 header div.area-left h1 {color:#ffffff; margin-bottom:5px;}
 header div.area-left span {float:left; background-color:#222629; color:#ffffff; padding:7px 15px;}
 header div.area-right {position:absolute; right:9%; display:flex; justify-content:flex-end;}
-header div.area-right img {width:300px;}
+header div.area-right img {width:250px;}
+
+@media (min-width:0px) and (max-width:680px) {
+	
+	header {width:100%; justify-content:center;}
+	header div.area-left {float:left; width:100%; justify-content:center; margin-top:-140px;}
+	header div.area-right {float:left; width:100%; justify-content: center; margin-top:210px; right:0%;}
+	header div.area-right img {width:180px;}
+}
+
+@media (min-width:681px) and (max-width:875px) {
+	header {width:100%;}
+	header div.area-right img {width:180px;}
+}
+@media (min-width:876px) and (max-width:1100px) {
+	
+}
 
 @keyframes gradient {
 	0% {
@@ -185,7 +194,18 @@ main {position:absolute; width:80%; top:0px; right:0px; display:flex; flex-wrap:
 main section {float:left; width:100%; margin-bottom:20px; display:flex; flex-wrap:wrap; border-radius:7px; padding:15px 25px;}
 main section h2 {float:left; width:100%; color:#222629; font-size:20px; margin-bottom:30px; padding:5px 0px; text-align:center;}
 main section h3 {float:left; width:100%; font-size:16px; color:#222629; margin-bottom:10px; text-align:center;}
-
+@media (min-width:0px) and (max-width:440px) {
+	main {width:100%;}
+}
+@media (min-width:441px) and (max-width:630px) {
+	main {width:100%;}
+}
+@media (min-width:631px) and (max-width:875px) {
+	main {width:100%;}
+}
+@media (min-width:876px) and (max-width:1100px) {
+	main {width:75%;}
+}
 
 main section.about {transform:translateY(-80px) translateX(-100vw); opacity:0; width:70%; background-color:#ffffff; padding:40px 30px; display:flex; justify-content: center; flex-wrap:wrap; box-shadow:0px 6px 15px 0px rgba(0,0,0,0.1);}
 main section.about article {float:left; width:100%;}
@@ -224,7 +244,8 @@ main section.portfolio div.box-desc-project:hover div.background-box-desc-projec
 main section.portfolio div.box-desc-project:hover div.text-desc-project {opacity:1; transform:translateY(0px); transition:0.3s;}
 main section.portfolio div.box-desc-project:hover ul.list-techs li {transform:translateY(0px); opacity:1; transition:0.5s;}
 
-@media (min-width:0px) and (max-width:840px) {
+@media (min-width:0px) and (max-width:1240px) {
+	
 }
 
 main section.skills {float:left; margin-top:0px; padding:40px 0px!important; display:flex; justify-content:center; flex-wrap:wrap;}
@@ -428,6 +449,30 @@ main section.skills h2 {float:left; margin-bottom:30px !important;}
 		 opacity: 1;
 	}
 }
+
+@media (min-width:0px) and (max-width:440px) {
+	.area-skills {
+		float:left;
+		width: 70%;
+	}
+	.img__skills {display:none;}
+	.line__label {transform: rotate(-30deg); font-size:10px;}
+}
+@media (min-width:441px) and (max-width:630px) {
+	.area-skills {
+		width: 70%;
+	}
+	.img__skills {display:none;}
+	.line__label {font-size:10px;}
+}
+@media (min-width:631px) and (max-width:875px) {
+	.area-skills {
+		margin-left:40px;
+	}
+}
+@media (min-width:876px) and (max-width:1100px) {
+	
+}
  
 main section.experience {float:left; margin-top:120px; display:flex; justify-content:center; transform:translateX(-100vw);}
 main section.experience h2 {float:left; margin-bottom:45px !important;}
@@ -445,6 +490,10 @@ main section.experience ul li label.lb-tasks i {margin-right:8px;}
 main section.experience ul li p.info-tasks {float:left; width:100%; color:#999999; font-size:13px; margin-top:5px; margin-left:22px;}
 .show-experience {transform:translateX(0px) !important; transition:1s;}
 
+@media (min-width:0px) and (max-width:875px) {
+	main section.experience ul li {width:70%;}
+}
+
 main section.formation {float:left; margin-top:20px; display:flex; justify-content:center; transform:translateX(-100vw);}
 main section.formation ul {float:left; width:100%; display:flex; flex-wrap:wrap; justify-content: center;}
 main section.formation ul li {float:left; position:relative; width:40%; margin:20px; background-color:rgba(0,0,0,0.04); display:flex; flex-wrap:wrap; padding:20px 25px; border-radius:5px;}
@@ -456,6 +505,10 @@ main section.formation ul li label.locale {float:left; width:100%; color:#999999
 main section.formation ul li label.locale i {margin-right:17px;}
 .show-formation {transform:translateX(0px) !important; transition:1s;}
 
+@media (min-width:0px) and (max-width:875px) {
+	main section.formation ul li {width:70%;}
+}
+
 main section.certificates {float:left; width:90%; margin-top:20px; display:flex; justify-content:center; flex-wrap:wrap; transform:translateY(180px); opacity:0;}
 main section.certificates h2 {float:left; margin-bottom:30px !important;}
 main section.certificates .splide__slide {height:320px !important; width:35vw !important; margin:0px 30px; margin-bottom:30px !important; background-size:auto 100% !important; background-position:center center !important; display:flex; justify-content:center;}
@@ -463,27 +516,8 @@ main section.certificates .splide__slide img {height:100%;}
 .show-certificates {transform:translateY(0px) !important; transition:1s; opacity:1 !important;}
 
 main footer {float:left; width:100%; background: linear-gradient(-45deg, #e1301d, #e64548, #e76f51, #e9c46a ); margin-top:30px; padding:20px 0px; display:flex; justify-content:center; flex-wrap:wrap;}
-main footer ul {width:100%; color:#fdfdfe; display:flex; justify-content:center;}
+main footer ul {width:100%; color:#fdfdfe; display:flex; flex-wrap: wrap; justify-content:center;}
 main footer ul li {margin:20px 40px;}
 main footer ul li img {width:120px;}
 main footer ul li label {color:#ffffff;}
 main footer ul li label i {margin-right:8px;}
-
-@media (min-width:0px) and (max-width:560px) {
-	main {width:80%; left:10%; top:70px;}
-	main ul li {flex-wrap:wrap;}
-	main ul li > label {float:left; width:100% !important; font-size:12px; font-weight:bold; margin-bottom:7px;}
-	main ul li div {width:100%; margin-left:0px !important;}
-	main ul li div label:first-child {font-size:12px; margin-bottom:7px;}
-	main ul li div label:last-child {font-size:10px;}
-}
-
-@media (min-width:561px) and (max-width:750px) {
-	main {width:80%; left:10%; top:70px;}
-	main ul li > label {width:100px; font-size:12px;}
-	main ul li div label:first-child {font-size:12px;}
-	main ul li div label:last-child {font-size:10px;}
-}
-@media (min-width:750px) and (max-width:1100px) {
-	main {width:68%; left:40px; top:100px;}
-}

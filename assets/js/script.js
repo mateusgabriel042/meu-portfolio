@@ -97,6 +97,10 @@ $(document).ready(function(){
 		$("#nav-cv ul").toggle(500);
 	});
 
+	$("#btn-nav-close").click(function(){
+		$("#nav-cv ul").toggle(500);
+	});
+
 	$("#toggle-data-cvmg").click(function(){
 		if(!$("#data-mg").hasClass("effect-show-data-mg")){
 			$("#data-mg").addClass("effect-show-data-mg");
