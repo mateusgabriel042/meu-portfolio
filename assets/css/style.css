@@ -36,47 +36,8 @@ input {outline:none;}
 ::-webkit-scrollbar-thumb {background-color:#222629;}
 
 
-aside.data-mg {position:fixed; left:0px; top:0px; width:20%; height:100%; z-index:101; background-color:#222629;}
-aside.data-mg .content-data-mg {position:absolute; height:100vh; width:80%; margin-left:10%; margin-top:20px; display:flex; justify-content:center; flex-wrap:wrap;}
-aside.data-mg .content-data-mg div.area-photo {margin-top:15px; width:150px; height:150px; border-radius:100%; overflow:hidden; border:3px solid #ffffff; display: flex; align-items: center; align-content:center;}
-aside.data-mg .content-data-mg div.area-photo img {width:100%;}
-aside.data-mg .content-data-mg div.redes-sociais {float:left; width:100%; margin-top:40px; margin-bottom:10px; display:flex; justify-content:center;}
-aside.data-mg .content-data-mg div.redes-sociais a {float:left; margin:0px; background-color:#ffffff; color:#222629; width:25px; height:25px; display:flex; justify-content:center; align-items:center; align-content:center; transition:all 0.3s;}
-aside.data-mg .content-data-mg div.redes-sociais a:first-child {border-radius:5px 0 0 5px; padding-left:3px;}
-aside.data-mg .content-data-mg div.redes-sociais a:last-child {border-radius:0 5px 5px 0; padding-right:3px;}
-aside.data-mg .content-data-mg div.redes-sociais a:hover {background-color:#222629; color:#ffffff; transition:all 0.3s;}
-aside.data-mg .content-data-mg h2 {float:left; color:#ffffff; margin:10px 0px; margin-top:30px; width:100%; font-size:18px;}
-aside.data-mg .content-data-mg ul {float:left; width:100%;}
-aside.data-mg .content-data-mg ul li {width:100%; margin:4px 0px; font-size:13px; color:#fdfdfe; display:flex; align-items:center; align-content:center;}
-aside.data-mg .content-data-mg ul li i {float:left; width:10px; margin-right:11px;}
 
-button.toggle-data-cvmg {transform:rotate(90deg); position:fixed; width:150px; z-index:10; left:-64px; padding:2px; bottom:100px; background-color:#222629; border:none; border-radius:0px 7px 0px 7px; color:#fdfdfe; display:none;}
-
-.effect-show-data-mg {transform:translateX(0px) !important; transition:0.5s !important;}
-.effect-hide-data-mg {transform:translateX(-130%) !important; transition:0.5s !important;}
-
-@media (min-width:0px) and (max-width:440px) {
-	aside.data-mg {width:100%; overflow-y:auto; transform:translateX(-100%); padding-bottom:20px; top:0px !important;}
-	aside.data-mg .content-data-mg {padding-bottom:20px; align-content:flex-start; align-items:flex-start;}
-	button.toggle-data-cvmg {display:block;}
-}
-@media (min-width:441px) and (max-width:630px) {
-	aside.data-mg {width:100%; transform:translateX(-100%); padding-bottom:20px; left:0px; top:0px !important; overflow-y:auto;}
-	button.toggle-data-cvmg {display:block;}
-}
-@media (min-width:631px) and (max-width:875px) {
-	aside.data-mg {width:35%; transform:translateX(-100%); padding-bottom:20px; top:0px !important;}
-	button.toggle-data-cvmg {display:block;}
-}
-@media (min-width:876px) and (max-width:1100px) {
-	aside.data-mg {width:25%;}
-	button.toggle-data-cvmg {display:block;}
-}
-
-
-
-
-nav {position:fixed !important; top:0px; z-index:100; right:0px; width:80%; display:flex; transition:0.3s;}
+nav {position:fixed !important; top:0px; z-index:100; right:0px; width:100%; display:flex; transition:0.3s;}
 nav ul {display:flex; padding:0px 40px; width:100%; justify-content:flex-end;}
 nav ul li {float:right; padding:15px; padding-top:35px; cursor:pointer; color:#fdfdfe; transition:0.3s;
   vertical-align: middle;
@@ -144,6 +105,17 @@ button.toggle-nav i {}
 
 
 
+
+
+
+main {position:absolute; width:100%; top:0px; right:0px; display:flex; flex-wrap:wrap; justify-content:center;}
+main section {float:left; width:100%; margin-bottom:20px; display:flex; flex-wrap:wrap; border-radius:7px; padding:15px 25px;}
+main section h2 {float:left; width:100%; color:#222629; font-size:20px; margin-bottom:30px; padding:5px 0px; text-align:center;}
+main section h3 {float:left; width:100%; font-size:16px; color:#222629; margin-bottom:10px; text-align:center;}
+
+
+
+
 header {position: relative; top:0px; right:0px; float:left; width:100%; height:100vh; display:flex; align-items:center;
 	align-content:center;
 	justify-content:space-between;
@@ -163,14 +135,13 @@ header div.area-right img {width:250px;}
 
 @media (min-width:0px) and (max-width:680px) {
 	
-	header {width:100%; justify-content:center;}
+	header {justify-content:center;}
 	header div.area-left {float:left; width:100%; justify-content:center; margin-top:-140px;}
 	header div.area-right {float:left; width:100%; justify-content: center; margin-top:210px; right:0%;}
 	header div.area-right img {width:180px;}
 }
 
 @media (min-width:681px) and (max-width:875px) {
-	header {width:100%;}
 	header div.area-right img {width:180px;}
 }
 @media (min-width:876px) and (max-width:1100px) {
@@ -190,25 +161,12 @@ header div.area-right img {width:250px;}
 }
 
 
-main {position:absolute; width:80%; top:0px; right:0px; display:flex; flex-wrap:wrap; justify-content:center;}
-main section {float:left; width:100%; margin-bottom:20px; display:flex; flex-wrap:wrap; border-radius:7px; padding:15px 25px;}
-main section h2 {float:left; width:100%; color:#222629; font-size:20px; margin-bottom:30px; padding:5px 0px; text-align:center;}
-main section h3 {float:left; width:100%; font-size:16px; color:#222629; margin-bottom:10px; text-align:center;}
-@media (min-width:0px) and (max-width:440px) {
-	main {width:100%;}
-}
-@media (min-width:441px) and (max-width:630px) {
-	main {width:100%;}
-}
-@media (min-width:631px) and (max-width:875px) {
-	main {width:100%;}
-}
-@media (min-width:876px) and (max-width:1100px) {
-	main {width:75%;}
-}
 
 main section.about {transform:translateY(-80px) translateX(-100vw); opacity:0; width:70%; background-color:#ffffff; padding:40px 30px; display:flex; justify-content: center; flex-wrap:wrap; box-shadow:0px 6px 15px 0px rgba(0,0,0,0.1);}
 main section.about article {float:left; width:100%;}
+main section.about article ul.list-data-mg {float:left; width:100%; display:flex; justify-content:center; margin-bottom:10px;}
+main section.about article ul.list-data-mg li {margin:10px;}
+main section.about article ul.list-data-mg li i {margin-right:7px;}
 main section.about article p {float:left; width:100%; color:#222629; font-size:14px; margin-bottom:10px; line-height:30px; margin-top:-8px; text-align:center;}
 main section.about a {background-color:#666666; padding:3px 30px; border-radius:13px; font-size:13px; color:#fdfdfe; margin:10px; transition:0.3s;}
 main section.about a:hover {background-color:#222629; transition:0.3s;}
@@ -216,10 +174,11 @@ main section.about a:hover {background-color:#222629; transition:0.3s;}
 
 main section.portfolio {float:left; width:90%; display:flex; justify-content:center; flex-wrap:wrap; opacity:1;}
 main section.portfolio h2 {float:left; margin-bottom:30px !important;}
-main section.portfolio .splide__slide {position:relative; height:320px !important; width:47vw !important; margin:0px 30px; margin-bottom:30px !important; background-size:auto 100% !important; background-position:center center !important; display:flex; justify-content:center;}
-main section.portfolio .splide__slide img {height:100%;}
+main section.portfolio ul.list-portfolio {width:100%; display:flex; flex-wrap: wrap; justify-content:center;}
+main section.portfolio ul.list-portfolio > li {width:570px; position:relative; margin:10px;}
+main section.portfolio ul.list-portfolio > li > img {width:100%;}
 main section.portfolio div.background-box-desc-project {position:absolute; width:100%; height:100%; left:0px; top:-1px; background: linear-gradient(-45deg, #e9c46a, #e76f51, #e64548, #e1301d); transform: scale(0); transition:0.3s; background-size: 400% 400%; animation: gradient 5s ease infinite;}
-main section.portfolio div.box-desc-project {position:absolute; width:calc(100% + 24px); height:100%; left:calc(0px - 12px); top:1px; display: flex; align-items:flex-start; align-content:flex-start; flex-wrap: wrap;}
+main section.portfolio div.box-desc-project {position:absolute; width:100%; height:100%; left:0px; top:1px; display: flex; align-items:flex-start; align-content:flex-start; flex-wrap: wrap;}
 main section.portfolio div.box-desc-project div.text-desc-project {width:100%; display: flex; justify-content: center; flex-wrap: wrap; z-index:2; opacity:0; transform:translateY(10px); transition:0.3s; margin-top:20px;}
 main section.portfolio div.box-desc-project div.text-desc-project h1 {width:100%; padding:0px; margin-bottom:10px; color: #efefef; text-align: center; font-size:18px;}
 main section.portfolio div.box-desc-project div.text-desc-project p {width:100%; padding:0px 30px; color: #efefef; text-align: center; font-size:14px;}
@@ -509,11 +468,19 @@ main section.formation ul li label.locale i {margin-right:17px;}
 	main section.formation ul li {width:70%;}
 }
 
-main section.certificates {float:left; width:90%; margin-top:20px; display:flex; justify-content:center; flex-wrap:wrap; transform:translateY(180px); opacity:0;}
+main section.certificates {float:left; width:calc(90%); margin-top:20px; flex-wrap:wrap; transform:translateY(180px); opacity:0;}
+main section.certificates .splide {width:100%;}
 main section.certificates h2 {float:left; margin-bottom:30px !important;}
-main section.certificates .splide__slide {height:320px !important; width:35vw !important; margin:0px 30px; margin-bottom:30px !important; background-size:auto 100% !important; background-position:center center !important; display:flex; justify-content:center;}
-main section.certificates .splide__slide img {height:100%;}
+main section.certificates .splide__slide {float:left; display:flex; align-items: center; align-content:center; height:320px !important; width:28.5vw !important; margin:0px 10px; margin-bottom:30px !important; overflow-y:hidden;}
+main section.certificates .splide__slide img {width:100%;}
 .show-certificates {transform:translateY(0px) !important; transition:1s; opacity:1 !important;}
+
+@media (min-width:0px) and (max-width:680px) {
+	main section.certificates .splide__slide {height:370px !important; width:90vw !important; margin:0px 0px; margin-bottom:30px !important;}
+}
+@media (min-width:681px) and (max-width:1200px) {
+	main section.certificates .splide__slide {height:360px !important; width:43vw !important; margin:0px 10px; margin-bottom:30px !important;}
+}
 
 main footer {float:left; width:100%; background: linear-gradient(-45deg, #e1301d, #e64548, #e76f51, #e9c46a ); margin-top:30px; padding:20px 0px; display:flex; justify-content:center; flex-wrap:wrap;}
 main footer ul {width:100%; color:#fdfdfe; display:flex; flex-wrap: wrap; justify-content:center;}

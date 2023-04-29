@@ -101,17 +101,6 @@ $(document).ready(function(){
 		$("#nav-cv ul").toggle(500);
 	});
 
-	$("#toggle-data-cvmg").click(function(){
-		if(!$("#data-mg").hasClass("effect-show-data-mg")){
-			$("#data-mg").addClass("effect-show-data-mg");
-			$("#data-mg").removeClass("effect-hide-data-mg");
-		}else{
-			$("#data-mg").addClass("effect-hide-data-mg");
-			$("#data-mg").removeClass("effect-show-data-mg");
-		}
-	});
-
-
 });
 
 particlesJS("header",
