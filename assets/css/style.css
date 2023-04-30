@@ -14,7 +14,7 @@
 *a formatacao aqui afetara todos os elementos 
 *-------------------------------------------------------------------------------------
 */
-html, body {margin:0px; padding:0px; width:100%; height:100%;}
+html, body {margin:0px; padding:0px; width:100%; height:100%; background-color:rgba(0,0,0,0.05);}
 ul {float:left; margin:0px; padding:0px; list-style:none;}
 ul li {float:left;}
 a {text-decoration:none; cursor:pointer;}
@@ -50,10 +50,13 @@ nav ul li:before {
   content: "";
   position: absolute;
   z-index: -1;
-  top: 0;
+  height:2px;
+  width:70%;
   left: 0;
   right: 0;
   bottom: 0;
+  margin-left:auto;
+  margin-right:auto;
   background-color:#222629;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -84,7 +87,6 @@ nav ul li.btn-nav-close {background-color:#e64548; display:none;}
 }
 .nav-white ul li {padding-top:15px; transition:0.3s;}
 .nav-white ul li:not(.active) {color: #222629;}
-.nav-white ul li:not(.active):hover {color: #ffffff;}
 
 /*nav ul li:hover {background-color:#029c5a; color:#fdfdfe; transition:0.3s; background-size:100%;}*/
 button.toggle-nav {position:fixed; width:40px; height:40px; z-index:5; right:20px; top:25px; border:none; border:none; color:#fdfdfe; font-size:20px; background-color:#222629; border-radius:100%; display:none; }
@@ -109,36 +111,40 @@ button.toggle-nav i {}
 
 
 main {position:absolute; width:100%; top:0px; right:0px; display:flex; flex-wrap:wrap; justify-content:center;}
-main section {float:left; width:100%; margin-bottom:20px; display:flex; flex-wrap:wrap; border-radius:7px; padding:15px 25px;}
+main section {float:left; width:100%; margin-bottom:20px; display:flex; flex-wrap:wrap; padding:15px 25px;}
 main section h2 {float:left; width:100%; color:#222629; font-size:20px; margin-bottom:30px; padding:5px 0px; text-align:center;}
 main section h3 {float:left; width:100%; font-size:16px; color:#222629; margin-bottom:10px; text-align:center;}
 
 
 
 
-header {position: relative; top:0px; right:0px; float:left; width:100%; height:100vh; display:flex; align-items:center;
-	align-content:center;
-	justify-content:space-between;
-	padding:0px 10%;
-	flex-wrap:wrap;
+header {position: relative; top:0px; right:0px; float:left; width:100%; height:100vh;
 	background: linear-gradient(-45deg, #e9c46a, #e76f51, #e64548, #e1301d);
 	background-size: 400% 400%;
 	animation: gradient 10s ease infinite;
 }
-header div.area-left {position:absolute; display:flex; align-items:flex-end; align-content:flex-end;}
-header div.area-left img {margin-right:15px; width:50px;}
-header div.area-left label {color:#ffffff; font-size:20px;}
-header div.area-left h1 {color:#ffffff; margin-bottom:5px;}
-header div.area-left span {float:left; background-color:#222629; color:#ffffff; padding:7px 15px;}
-header div.area-right {position:absolute; right:9%; display:flex; justify-content:flex-end;}
+header div.content-header {position:absolute; left:0px; top:0px; width:100%; height:100%; display:flex; align-items:center;
+	flex-wrap: wrap;
+	align-content:center;
+	justify-content:space-around;
+	padding:0px;
+}
+header div.area-left {display:flex; align-items:flex-end; align-content:flex-end;}
+header div.area-left img {margin-right:15px; width:70px;}
+header div.area-left label {color:#ffffff; font-size:25px;}
+header div.area-left h1 {color:#ffffff; margin-bottom:5px; font-size:28px;}
+header div.area-left span {float:left; background-color:#222629; font-size:18px; color:#ffffff; padding:7px 15px;}
+header div.area-right {right:9%; display:flex; justify-content:flex-end;}
 header div.area-right img {width:250px;}
 
-@media (min-width:0px) and (max-width:680px) {
-	
+@media (min-width:0px) and (max-width:680px) {	
 	header {justify-content:center;}
-	header div.area-left {float:left; width:100%; justify-content:center; margin-top:-140px;}
-	header div.area-right {float:left; width:100%; justify-content: center; margin-top:210px; right:0%;}
-	header div.area-right img {width:180px;}
+	header div.area-left {width:100%; justify-content:center;}
+	header div.area-left img {width:40px;}
+	header div.area-left label {font-size:15px;}
+	header div.area-left h1 {font-size:25px;}
+	header div.area-left span {font-size:14px;}
+	header div.area-right {display:none;}
 }
 
 @media (min-width:681px) and (max-width:875px) {
@@ -164,7 +170,7 @@ header div.area-right img {width:250px;}
 
 main section.about {transform:translateY(-80px) translateX(-100vw); opacity:0; width:70%; background-color:#ffffff; padding:40px 30px; display:flex; justify-content: center; flex-wrap:wrap; box-shadow:0px 6px 15px 0px rgba(0,0,0,0.1);}
 main section.about article {float:left; width:100%;}
-main section.about article ul.list-data-mg {float:left; width:100%; display:flex; justify-content:center; margin-bottom:10px;}
+main section.about article ul.list-data-mg {float:left; width:100%; display:flex; justify-content:center; margin-bottom:10px; flex-wrap:wrap;}
 main section.about article ul.list-data-mg li {margin:10px;}
 main section.about article ul.list-data-mg li i {margin-right:7px;}
 main section.about article p {float:left; width:100%; color:#222629; font-size:14px; margin-bottom:10px; line-height:30px; margin-top:-8px; text-align:center;}
@@ -212,7 +218,7 @@ main section.skills h2 {float:left; margin-bottom:30px !important;}
  
  .area-skills {
 	float:left;
-	 width: 70%;
+	 width: 50%;
 	 height: 788px;
 	 margin-top:45px;
 	 position: relative;
@@ -436,7 +442,11 @@ main section.skills h2 {float:left; margin-bottom:30px !important;}
 main section.experience {float:left; margin-top:120px; display:flex; justify-content:center; transform:translateX(-100vw);}
 main section.experience h2 {float:left; margin-bottom:45px !important;}
 main section.experience ul {float:left; width:100%; display:flex; flex-wrap:wrap; justify-content:center;}
-main section.experience ul li {float:left; position:relative; width:40%; margin:20px; background-color:rgba(0,0,0,0.04); display:flex; flex-wrap:wrap; padding:20px 25px; border-radius:5px;}
+main section.experience ul li {float:left; position:relative; width:40%; margin:20px; background-color:rgba(0,0,0,0.04); display:flex; flex-wrap:wrap; padding:20px 25px; border-radius:5px;
+	-webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.36);
+	-moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.36);
+	box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.36);
+}
 main section.experience ul li span.icon-experience {position:absolute; right:25px; top:-20px; width:50px; height:50px; color:#ffffff; display:flex; justify-content:center; align-items:center; align-content:center; border-radius:100%; background-color: #e64548;}
 main section.experience ul li label.time {float:left; width:100%; font-weight:bold; color:#e64548; font-size:13px; margin-bottom:10px;}
 main section.experience ul li label.time i {margin-right:8px;}
@@ -453,27 +463,66 @@ main section.experience ul li p.info-tasks {float:left; width:100%; color:#99999
 	main section.experience ul li {width:70%;}
 }
 
-main section.formation {float:left; margin-top:20px; display:flex; justify-content:center; transform:translateX(-100vw);}
-main section.formation ul {float:left; width:100%; display:flex; flex-wrap:wrap; justify-content: center;}
-main section.formation ul li {float:left; position:relative; width:40%; margin:20px; background-color:rgba(0,0,0,0.04); display:flex; flex-wrap:wrap; padding:20px 25px; border-radius:5px;}
+
+main section.formation {float:left; position:relative; padding:0px; padding-top:40px; margin:50px 0px; opacity: 0;
+	background: linear-gradient(-45deg, #e9c46a, #e76f51, #e64548, #e1301d);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+}
+main section.formation h2 {color:#ffffff; font-size:30px;}
+main section.formation ul {float:left; width:100%; display:flex; flex-wrap:wrap; justify-content: center; padding-bottom:50px;}
+main section.formation ul li {float:left; position:relative; width:30%; margin:20px; background-color:#fdfdfe; display:flex; flex-wrap:wrap; padding:20px 25px; border-radius:5px;
+	-webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.36);
+	-moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.36);
+	box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.36);
+}
 main section.formation ul li label.time {float:left; width:100%; font-weight:bold; color:#e64548; font-size:13px; margin-bottom:10px;}
 main section.formation ul li label.time i {margin-right:15px;}
 main section.formation ul li label.course {float:left; width:100%; color:#666666; font-weight:bold; font-size:14px; margin-bottom:10px;}
 main section.formation ul li label.course i {margin-right:8px;}
 main section.formation ul li label.locale {float:left; width:100%; color:#999999; font-weight:bold; font-size:14px;}
 main section.formation ul li label.locale i {margin-right:17px;}
-.show-formation {transform:translateX(0px) !important; transition:1s;}
+main section.formation div.area-waves {width: 100%;}
+main section.formation svg.waves {position:relative; width: 100%; height:15vh; margin-bottom:-7px; min-height:100px; max-height:150px;}
+main section.formation g.parallax > use {animation: move-forever 25s cubic-bezier(.55,.5,.45,.5) infinite; }
+main section.formation g.parallax > use:nth-child(1) {animation-delay: -2s; animation-duration: 7s;}
+main section.formation g.parallax > use:nth-child(2) {animation-delay: -3s; animation-duration: 10s;}
+main section.formation g.parallax > use:nth-child(3) {animation-delay: -4s; animation-duration: 13s;}
+main section.formation g.parallax > use:nth-child(4) {animation-delay: -5s; animation-duration: 20s;}
 
+.show-formation {opacity: 1 !important; transition:1s;}
+
+@keyframes move-forever {
+  0% {transform: translate3d(-90px,0,0);}
+  100% {transform: translate3d(85px,0,0);}
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+	section.formation-test svg.waves {height:40px; min-height:40px;}
+}
 @media (min-width:0px) and (max-width:875px) {
 	main section.formation ul li {width:70%;}
 }
 
-main section.certificates {float:left; width:calc(90%); margin-top:20px; flex-wrap:wrap; transform:translateY(180px); opacity:0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+main section.certificates {float:left; width:calc(90%); margin-top:20px; flex-wrap:wrap; transform:translateX(-100vw); opacity:0;}
 main section.certificates .splide {width:100%;}
 main section.certificates h2 {float:left; margin-bottom:30px !important;}
 main section.certificates .splide__slide {float:left; display:flex; align-items: center; align-content:center; height:320px !important; width:28.5vw !important; margin:0px 10px; margin-bottom:30px !important; overflow-y:hidden;}
 main section.certificates .splide__slide img {width:100%;}
-.show-certificates {transform:translateY(0px) !important; transition:1s; opacity:1 !important;}
+.show-certificates {transform:translateX(0px) !important; transition:1s; opacity:1 !important;}
 
 @media (min-width:0px) and (max-width:680px) {
 	main section.certificates .splide__slide {height:370px !important; width:90vw !important; margin:0px 0px; margin-bottom:30px !important;}

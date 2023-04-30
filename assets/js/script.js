@@ -6,7 +6,8 @@ function changeBtnNav(id){
 		document.getElementById(id).classList.add('active');
 	}
 }
-$(window).scroll(function (event) {
+
+function verifyScroll(){
 	if($(window).scrollTop() <= 30){//caso o topo barra de navegacao seja menor do que 30px remove o background
 		if($("#nav-cv").hasClass('nav-white'))
 			$("#nav-cv").removeClass('nav-white');
@@ -16,51 +17,48 @@ $(window).scroll(function (event) {
 			$("#nav-cv").addClass('nav-white');
 	}
 
-	if($(window).scrollTop() > $('#about').scrollTop() + 150 && $(window).scrollTop() < $('#portfolio').scrollTop() + 500){
+	if($(window).scrollTop() > $('#about').offset().top - 200){
 		if(!$("#about").hasClass('show-about'))
 			$("#about").addClass('show-about');
 		changeBtnNav('btn-about')
 	}
 
-	if($(window).scrollTop() > $('#portfolio').scrollTop() + 500 && $(window).scrollTop() < $('#skills').scrollTop() + 1000){
+	if($(window).scrollTop() > $('#portfolio').offset().top - 120){
 		if(!$("#portfolio").hasClass('show-portfolio'))
 			$("#portfolio").addClass('show-portfolio');
 		changeBtnNav('btn-portfolio')
 	}
 
-	if($(window).scrollTop() > $('#skills').scrollTop() + 1000 && $(window).scrollTop() < $('#experience').scrollTop() + 1900){
+	if($(window).scrollTop() > $('#skills').offset().top - 50){
 		$('.chart__title').css({'display':'block'});
 		$('.chart__bar').css({'display':'flex'});
 		changeBtnNav('btn-skills')
 	}
 
-	if($(window).scrollTop() > $('#experience').scrollTop() + 1900 && $(window).scrollTop() < $('#formation').scrollTop() + 2300){
+	if($(window).scrollTop() > $('#experience').offset().top - 250){
 		if(!$("#experience").hasClass('show-experience'))
 			$("#experience").addClass('show-experience');
 		changeBtnNav('btn-experience')
 	}
 
-	if($(window).scrollTop() > $('#formation').scrollTop() + 2300 && $(window).scrollTop() < $('#certificates').scrollTop() + 2600){
+	if($(window).scrollTop() > $('#formation').offset().top - 340){
 		if(!$("#formation").hasClass('show-formation'))
 			$("#formation").addClass('show-formation');
 		changeBtnNav('btn-formation')
 	}
 
-	if($(window).scrollTop() > $('#certificates').scrollTop() + 2600){
+	if($(window).scrollTop() > $('#certificates').offset().top  - 450){
 		if(!$("#certificates").hasClass('show-certificates'))
 			$("#certificates").addClass('show-certificates');
 		changeBtnNav('btn-certificate')
 	}
+}
 
-	
-});
 $(document).ready(function(){
-	/*function closeNavByClickingItemMobile(){
-		if($("#nav-cv ul").css("display") != "none" && $(window).width() <= 640)
-			$("#nav-cv ul").css({"display":"none"});
-	}*/
-
-	
+	verifyScroll();
+	$(window).scroll(function () {
+		verifyScroll();
+	});
 
 	$("#btn-about").click(function(){
 		$('html, body').animate({scrollTop: $('#about').offset().top - 200}, 500);
