@@ -218,7 +218,6 @@ header div.services-dev div.boxes div.box div div label {float:left; width:100%;
 @media (min-width:681px) and (max-width:875px) {
 	header {justify-content:center; height:110vh;}
 	header div.content-header {gap:55px;}
-	header div.area-left {margin-bot;}
 	header div.area-left img {width:60px;}
 	header div.services-dev {width:100%;}
 	header div.services-dev div.boxes {flex-wrap:nowrap; justify-content:center; gap:15px;}
