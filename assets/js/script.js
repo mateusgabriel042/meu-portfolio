@@ -26,11 +26,15 @@ function verifyScroll(){
 		if($("#nav-cv").hasClass('nav-white'))
 			$("#nav-cv").removeClass('nav-white');
 		
+		$("#nav-cv .area-left .vr").css({'background-color':'#ffffff'})
 		$("#nav-cv .area-left .social-network a").css({'color':'#ffffff'})
+		$("#nav-cv .area-left img").attr('src', 'assets/img/logos/my-name-white.png');
 		
 	}else{
 		if(!$("#nav-cv").hasClass('nav-white'))
 			$("#nav-cv").addClass('nav-white');
+			$("#nav-cv .area-left img").attr('src', 'assets/img/logos/my-name.png');
+			$("#nav-cv .area-left .vr").css({'background-color':'#000000'})
 			$("#nav-cv .area-left .social-network a").css({'color':'#000000'})
 	}
 

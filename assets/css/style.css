@@ -14,7 +14,7 @@
 *a formatacao aqui afetara todos os elementos 
 *-------------------------------------------------------------------------------------
 */
-html, body {margin:0px; padding:0px; width:100%; height:100%; background-color:rgba(0,0,0,0.05);}
+html, body {margin:0px; padding:0px; width:100%; height:100%; background-color:rgba(0,0,0,0.01);}
 ul {float:left; margin:0px; padding:0px; list-style:none;}
 ul li {float:left;}
 a {text-decoration:none; cursor:pointer;}
@@ -40,7 +40,7 @@ input {outline:none;}
 nav {position:fixed !important; z-index:100; top:0px; left:0px; width:100%; display:flex; transition:0.3s; justify-content:space-between; align-items: center; align-content: center;}
 
 nav div.area-left {display:flex; align-items:center; margin-left:5%;}
-nav div.area-left div.vr {height:30px; width:2px; background-color: #000000; margin:0px 10px; margin-left:20px; animation-name: show-vr; animation-duration:0.5s; animation-iteration-count: 1;}
+nav div.area-left div.vr {height:30px; width:2px; background-color: #ffffff; margin:0px 10px; margin-left:20px; animation-name: show-vr; animation-duration:0.5s; animation-iteration-count: 1;}
 nav div.area-left div.social-network {display:flex;}
 nav div.area-left div.social-network a { width:25px; height:25px; color:#000000; border-radius:100%; display:flex; justify-content: center; align-items: center; font-size:16px; margin:0px 4px; transition:0.3s; animation-name:show-social-network; animation-duration:1.1s; animation-iteration-count:1;}
 
@@ -554,13 +554,13 @@ main section.experience ul li p.info-tasks {float:left; width:100%; color:#99999
 }
 
 
-main section.formation {float:left; position:relative; padding:0px; padding-top:40px; margin:50px 0px; opacity: 0;
+main section.formation {float:left; position:relative; padding:0px; padding-top:90px; margin:50px 0px; opacity: 0;
 	background: linear-gradient(-45deg, #e9c46a, #e76f51, #e64548, #e1301d);
 	background-size: 400% 400%;
 	animation: gradient 10s ease infinite;
 }
 main section.formation h2 {color:#ffffff; font-size:30px;}
-main section.formation ul {float:left; width:100%; display:flex; flex-wrap:wrap; justify-content: center; padding-bottom:50px;}
+main section.formation ul {float:left; width:100%; display:flex; flex-wrap:wrap; justify-content: center; padding-bottom:80px;}
 main section.formation ul li {float:left; position:relative; width:30%; margin:20px; background-color:#fdfdfe; display:flex; flex-wrap:wrap; padding:20px 25px; border-radius:5px;
 	-webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.36);
 	-moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.36);
